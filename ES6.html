@@ -1,0 +1,274 @@
+Template Literals: Es6 introduce very simple string template along with placeholder
+for the variable.
+The syntax for using the string template is ${PARAMETER} and is used inside of the back-ticked string
+ex- var name = `My name is ${firstname} ${lastName}`
+<script> 
+// var x = 10;
+// console.log("Value of x is  :"+x);
+// document.write("<h1>Value of x is  :"+x+"</h1>"); 
+
+// console.log(`Value of x is : ${x}`)
+// document.write(`<h1>Value of X is : ${x}</h1>`);
+// var x = 10;
+// var y = 20;
+// console.log(`x = ${x} : y = ${y}`);
+// console.log(`Add is : ${x+y}`);
+// // ========================================
+// //Default Parameter
+// function show(x=10,y=20){ //default x=10, y=20
+//     console.log(`Show called : ${x} : ${y}`)
+// }
+// show();
+// show(11,66)
+// // ============================================
+// Multi-line statements
+// var data = "Welcome to code better 
+// & Welcome 
+// to strings"
+// document.write(data)
+// var data = `Hello students Welcone to 
+//             Code better & Today
+//             Learn ES_6 Topics`
+// // In ES_6 Write String Es6 also provides
+// // ===============================================
+// // Enhanced object literals
+// //Es-6 provides enhanced object literals which made it easy to quickly create objects
+// //with properties inside the curly braces
+// // function add(){
+// //     var x =10;
+// //     var y = 20;
+// //     var z = x+y;
+// //     // return z;
+// //     // return{x:x,y:y,z:z};
+// //     return{x,y,z};
+// // }
+// // var res = add();
+// // console.log(typeof res);
+// // console.log(res);
+// // console.log(`${res.x} : ${res.y} : ${res.z}`);
+// //================================================
+// Where let and const keyword
+// var : It is used to create a local variable
+//     : We can re-declare & Re-assign variable
+//     : we cannot access outside the function block
+// let: It is used to created scopic variable
+//     We can not re-declare but we can re-assignng variable value
+//     we cannot access out    
+// const: It is used to create a constant variable
+//      : we cannot re-declare & re-assign
+// */
+// function show(){
+//     x = 100;
+//     var y = 200;
+//     var y = 300;
+//     let z = 500;
+//     z = 700;
+//     //let z; //Error : x has been already declared
+//     console.log(`Inside Show :  Value of x is : ${x}`);
+//     console.log(`Inside Show :  Value of y is : ${y}`);
+//     console.log(`Inside Show :  Value of z is : ${z}`);
+//     if(true){
+//         let a = 1000;
+//         console.log(`Inside If : Value of a is : ${a}`);
+//     }
+//     console.log(`outside If : Value of a is : ${a}`);//error :beacoz a is scopic variable
+// }
+// show();
+// console.log(`Òutside Show : Value of x is : ${x}`);
+// console.log(`Òutside Show : Value of x is : ${y}`); 
+//===========================================================
+//Array Methods Array api
+// push()
+// pop()
+// slice()
+// splice()
+// shift()
+// unshift()
+// join()
+// reverse()
+// sort()
+// Higher Order Functions
+// Map();
+// filter()
+// reduce()
+// =====================================
+// push(): To add or insert element at last position from given array
+        //  : It change original or existing array
+//    var arr = [11,21,23,34,43];
+//    console.log(arr)
+//    console.log(`Length oF given Array is : ${arr.length}`) ;    
+
+//    arr.push(55);
+//    console.log(arr)
+//    console.log(`Length oF given Array is : ${arr.length}`)  ;   
+   
+//    arr.push(22,45,65);
+//    console.log(arr)
+
+//    console.log(`Length oF given Array is : ${arr.length}`);   
+// //    =========================================================
+// //unshift() : This Method to add new element ot item to begining & return ne array length
+//         //  : It change Original or existing array 
+// var arr = [11,21,23,34,43];
+//    console.log(arr)
+//    console.log(`Length oF given Array is : ${arr.length}`); //5   
+
+//    arr.unshift(55);
+//    console.log(arr)
+//    console.log(`Length oF given Array is : ${arr.length}`); //6     
+   
+//    arr.unshift(22,45,65);
+//    console.log(arr)
+
+//    console.log(`Length oF given Array is : ${arr.length}`); //9  
+// //    ==========================================================
+// // pop() : This method remove the last element of an given array & returned removed element.
+//     //   : It change original or existing array
+//     var arr = [11,22,23,34,43];
+//     console.log(arr)
+//     console.log(`Length of Given array is : ${arr.length}`);
+
+//     var ele = arr.pop();
+//     console.log(arr)
+//     console.log(`Removed Element is : ${ele}`);
+//     console.log(`Length of Given array is : ${arr.length}`);
+    
+//     ele = arr.pop();
+//     console.log(arr);
+//     console.log(`Removed Element is : ${ele}`); //34
+//     console.log(`Length of Given array is : ${arr.length}`);
+
+// // ===================================================================
+// // shift() : This method remove the first element of an given array & returned removed element.
+// // It changes original or existing array 
+// var arr = [11,22,23,34,43];
+//     console.log(arr)
+//     console.log(`Length of Given array is : ${arr.length}`);
+
+//     var ele = arr.shift();
+//     console.log(arr)
+//     console.log(`Removed Element is : ${ele}`);
+//     console.log(`Length of Given array is : ${arr.length}`);
+    
+//     ele = arr.shift();
+//     console.log(arr);
+//     console.log(`Removed Element is : ${ele}`); //34
+//     console.log(`Length of Given array is : ${arr.length}`);
+// // ============================================================ 
+// // toString() : This method is used to convert array into String form
+// // : Returned String with array values seperated by commas
+// // It does not change original array  
+
+// var arr = [11,21,23,34,43];
+// console.log(arr) //[11,21,23,34,43]
+// console.log(typeof arr);
+// console.log("==============")
+// var ar = arr.toString();
+// console.log(ar) //11,21,23,34
+// console.log(typeof ar);
+// // ============================================
+// //join() : This methods a new String by concating all the elements in an array.
+// //Seperated by a commas or any seprator String
+// var arr = [11,21,23,34,43];
+// console.log(arr)   //[11,21,23,34,43]
+// console.log(typeof arr)
+// console.log("====================");
+// var ar = arr.join();
+// console.log(ar) //11,21,23,34,43
+// console.log(typeof ar);
+// console.log("====================");
+// var ar = arr.join("-");
+// console.log(ar) //11-21-23-34-43
+// console.log(typeof ar);
+// console.log("=====================")
+// var ar = arr.join("/")
+// console.log(ar) //11//21/23//34//43
+// console.log(typeof ar);
+// // ===========================================
+// //reverse() : This method a reverse the order of an array elements
+//            // : Overwrites the original array
+// var arr = [11,21,23,34,43];
+// console.log(arr);   //[11,21,23,34,43]
+// console.log(typeof arr);
+// console.log("========");
+// arr.reverse();
+// console.log(arr); //43,34,23,21,11
+// // =================================================== 
+// //sort()  :This method sort the element of an given array
+//         //  / : Overwrites the original array  
+//         //    : Sorts the elements as a string in alphabetical & Ascending number.   
+// var arr = [99,32,23,43,5,11,53,76,8,111,22];
+// var arr_name = ["Govind","Zeeshan","Laxmikant","AAshu","Nitin","Shubham"];
+// console.log(arr) //[99,32,23,43,5,11,53,76,8,111,22]  
+// console.log(arr_name) //["Govind","Zeeshan","Laxmikant","AAshu","Nitin","Shubham"];
+// arr.sort();
+// arr_name.sort();
+// console.log("=====================");
+// console.log(arr) //[11,111,22,23,32]
+// console.log(arr_name)      //'govind','Zeeshan','Lamikant'
+// // ============================================================
+// slice() This method outpieces from array & create a new Array
+//        : array.slice(start.end)   
+//        var arr = [99,32,23,43,5,11,53,76,8,111,22];
+//        console.log(arr) // [99,32,23,43,5,11,53,76,8,111,22];
+//        var ar = arr.slice(4,7); //end: less than 1 size
+//        console.log("============================");
+//        console.log(ar) //[5,11,53]
+//        console.log(arr); //99,32,23,43,5,11,53,76,8,111,22
+// //============================================================
+// splice = [99,32,23,43,5,11,53,76,8,111,22]
+// console.log(arr); //
+// var ar = arr.splice(2,6); // 1st parameter indexing & 2nd paarmeter : total no of else
+// console.log("=============")
+// console.log(ar); //[23,43,5,11,53,76]
+// console.log(arr); //99,32,8,11,22        
+//</script>
+<!-- ======================================================== -->
+<script>
+var arr = [11,21,23,44,46,56,43,22,67,87] 
+arr.map((ele)=>{
+        console.log(ele);
+})
+arr.map((ele,index)=>{
+        console.log(`${index} : ${ele}`);
+})
+arr.map((ele,index,ar)=>{
+        console.log(`${index} : ${ele} : ${ele});
+})
+</script>
+====================================================
+<script> //element multiple by 2
+var arr = [11,22,33,44,55,66];
+console.log(arr);
+var ar = arr.map((ele)=>ele*2);
+console.log(ar);        
+        </script>
+// ========================================================
+<script>
+filter : The filter() method takes each element in an array and it applies a conditional statement against it. If this conditional returns true, the element gets pushed to the output array
+If the conditional returns false, the element does not get pushed to the output array.
+var arr = [11,21,23,44,56,43,22,67,87] 
+for(let i=0;i<arr.length;i++){
+if(arr[i]>30)
+console.log(arr[i]);
+}    
+console.log("=========================")
+for(let i=0;i<arr.length;i++){
+  if(arr[i]%2==0)
+  console.log(arr[i])
+}
+  var ar = arr.filter((ele)=>30); 
+  console.log(ar);    
+var ar = arr.filter((ele)=>ele%2==0);
+console.log(ar);
+ar = arr.filter((ele)=>ele%5==0);
+console.log(ar);  
+// ====================================================
+event: It is an activity which is used to perform specific functionality 
+event are activity which is ued to perform differnet differnet implementations and or dynamic changes at application level UI
+There are many typesof events 1) Click based Event
+2)Cursor based event 
+3) Keybased event
+4) state change event
+5) focused based event 
+</script>

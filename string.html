@@ -1,0 +1,48 @@
+American standard code for Information Interchange.
+String: It is a collection of characters or group of Characters.
+Respresent in Single quote('') or double quote("")in js 
+Ascii Values : American Standard Code For Information Interchange.
+Ascii codes represent text in computers, telecommunication equipment, and other devices.
+Ascii Has just 128 code points(0-127)
+A-Z : 65:90
+a-z : 97-112
+0-9 : 48-57
+space: 32
+Enter : 10 
+<script>
+    var data = 'Hello Students I Love MERN Stack Course.'
+    console.log(typeof data)
+    console.log(data);
+    console.log(data.length); //40 also count space
+    console.log(data[6]);  //charact method lkisbhi position ka refernece lake deta hai
+    var ch =data.charAt(7);
+    console.log(ch);
+    var data = 'H';
+    var data1 = 'H';
+    console.log(data == data1);
+    data = 'A'
+    data1 = 'a';
+    console.log(data == data1); 
+charAt(): return the character at the specific position or index. 
+concat() : joins two or more Strings. 
+replace() : replace a string with another string 
+split() : Convert the String into an array of String. 
+substr() : Returns a part of the String from the specific start position & length of sub string. 
+subString(): Returns a part of the String from the specific start index to the end index. 
+
+slice(), to LoweCase(), toUpperCase(), trim() Remove white spaces from the String
+var data = 'Hello Students';
+console.log(data);
+console.log(data.toLowercase());
+console.log(data.toUpperCase());
+data = "     HEllo All Students    "
+console.log(data)
+console.log(data.length); //28
+
+data = data.trim() 
+console.log(data);
+console.log(data.length); //18
+
+data = data.replace(data,"Welcome to code better..");
+console.log(data)
+</script>  

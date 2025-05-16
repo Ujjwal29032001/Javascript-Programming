@@ -1,0 +1,186 @@
+<script>
+
+    //Sum of Arrays Elements  
+//var arr = [10,20,30,40,50,60,70,80,90,100]
+//var sum =0;
+// Sum of Array Elements using for Loop
+//for(var i=0; i<arr.length; i++){
+  //  document.write(arr[i]+"&nbsp;&nbsp;")
+    //sum = sum + arr[i];
+//}    
+//document.write("<h1>Sum of Array Elements Is:"+sum+"</h1>")  
+
+// Sum of Array Elements using For Of Loop
+// var arr = [10,20,30,40,50,60,70,80,90,100]
+// var sum = 0
+// for(var ar of arr){
+    // document.write(ar+"&nbsp;&nbsp;")
+    // sum = sum + ar;
+// }
+// document.write("<h1>Sum of Array Elements Is: "+sum+"</h1>") 
+
+// <!-- Find the maximum and minimum elements from givn array -->
+//  var arr;
+//  arr =[11,21,9,45,15,6,7,18,87,72];
+//  var max = arr[0]; //max=11;
+//  var min = arr[0]; //min=11;
+//  for(var i=0; i<arr.length; i++) {
+    // document.write(arr[i]+"&nbsp;&nbsp;");
+    // if(max<arr[i]){       //11 <arr[1] => 11<21 , 11<9, 11<45
+            // max = arr[i]; // max = arr[1] => 21 , max=45 
+    // }
+    // if(min>arr[i]){     //11>arr[1] => 11>21, 11>9 , 9>45
+        //   min = arr[i]    // min = 9;
+    // }
+//  }
+//  document.write("<h1> Maximum Array Element is: "+max+"</h1>")
+//  document.write("<h1> Minimum Array Element is: "+min+"</h1>")  
+
+// Find the Array Elements in Ascending order
+// var arr;
+// arr = [11,21,9,45,15,6,7,18,87,72]
+// var temp;
+// document.write("<h1>Array Elements is :</h1>")
+// for(var i=0; i<arr.length; i++ ){
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// for(var i=0; i<arr.length; i++) {
+//    for(var j=i+1; j<arr.length; j++) {
+//      if(arr[j] < arr[i]) {
+//         temp = arr[i];
+//         arr[i] = arr[j];
+//         arr[j] = temp;
+//      }
+//    }
+// }   
+// document.write("<h1>Ascending Order Array Element is:</h1>")
+// for(var i=0; i<arr.length; i++) {
+//     document.write(arr[i] +"&nbsp;&nbsp;")
+// }
+//Print the Number in Descending Order
+// var arr;
+// arr = [5,2,8,7,1]
+// var temp;
+// document.write("<h1>Array Element is: </h1>");
+// for(var i=0; i<arr.length;i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;")
+// } 
+// for(var i=0; i<arr.length; i++){
+//     for(j=i+1; j<arr.length; j++){
+//         if(arr[i] < arr[j]){
+//             temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp;
+
+//         }
+
+//     }
+// }
+// document.write("<h1>Descending  Order Array Element is : </h1>")
+// for(var i=0; i<arr.length; i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;")
+// }     
+
+// Print the Given Number in Reverse Order In Arrays 
+// var arr;
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// document.write("<h1>Actual Array Element is : </h1>")
+// for(var i=0; i<arr.length; i++) {
+//     document.write(arr[i]+"&nbsp;&nbsp;");
+// }
+
+// document.write("<h1>Actual Element in Reverse Order : </h1>");
+// for(var i=arr.length-1; i>=0; i--) {
+//     document.write(arr[i] + "&nbsp;&nbsp;");
+// }
+// Sum of Even Indexing Elements From Given Array  
+// var arr;
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// var sum =0
+// document.write("<h1>Total Element in the given Array is: </h1>")
+// for(var i=0;i<arr.length; i++) {
+
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// for(var i=0; i<arr.length; i++) {
+//     if(i%2==1){
+//         sum = sum + arr;
+//         document.write("<h1>Sum of Even Number in Array :"+arr[i]+"</h1>")
+
+//     }
+// }
+// Print odd Indexing Element from given array
+// var arr;
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// var sum =0
+// document.write("<h1>Total Element in the given Array is: </h1>")
+// for(var i=0;i<arr.length; i++) {
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// document.write("<h1>Odd Indexing Element from give Array : </h1>")
+// for(var i=0; i<arr.length; i++) {
+//     if(i%2==0){
+//         sum = sum + arr;
+//         document.write(arr[i]+"&nbsp;&nbsp;")
+
+//     }
+// }
+// Print Even Number Indexing from given number array
+// var arr;
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// var sum =0
+// document.write("<h1>Total Element in the given Array is: </h1>")
+// for(var i=0;i<arr.length; i++) {
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// document.write("<h1>Even Indexing Element from give Array : </h1>")
+// for(var i=0; i<arr.length; i++) {
+//     if(i%2==1){
+//         sum = sum + arr;
+//         document.write(arr[i]+"&nbsp;&nbsp;")
+
+//     }
+// }
+
+// 4) Find the first two maximum & first two minimum element from given Array 
+var arr;
+ arr =[11,21,9,45,15,6,7,18,87,72];
+ var max = arr[0]; //max=11;
+ var min = arr[0]; //min=11;
+ for(var i=0; i<arr.length; i++) {
+    document.write(arr[i]+"&nbsp;&nbsp;");
+    if(max<arr[i]){       //11 <arr[1] => 11<21 , 11<9, 11<45
+            max = arr[i]; // max = arr[1] => 21 , max=45 
+    }
+    if(max<arr[i]){
+        max=arr[i]
+    }
+    if(min>arr[i]){     //11>arr[1] => 11>21, 11>9 , 9>45
+          min = arr[i]    // min = 9;
+    }
+    if(min>arr[i]){
+        min=arr[i]
+    }
+ }
+ document.write("<h1> Maximum Array Element is: "+max+"</h1>")
+ document.write("<h1> Minimum Array Element is: "+min+"</h1>")  
+
+//  Sum of Even Indexing Elements From Given Array  
+// var arr;
+// arr = [1,2,3,4,5,6,7,8,9,10]
+// var sum =0
+// document.write("<h1>Total Element in the given Array is: </h1>")
+// for(var i=0;i<arr.length; i++) {
+
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// for(var i=0; i<arr.length; i++) {
+//     if(i%2==0 && i!=0){
+//         sum = sum + arr[i];
+//        
+
+//     }
+// }
+// document.write("<h1>Sum of Even Number in Array :"+sum+"</h1>")
+
+</script>

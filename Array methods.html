@@ -1,0 +1,108 @@
+<script>
+    // push():to add or insert the element at the end of array
+    // var arr = [11,22,35,46,75]
+    // console.log(arr)
+    // console.log(`length of given Array before push : ${arr.length}`)
+    // arr.push(100,75)
+    // console.log(arr)
+    // console.log(`length of the given array after push : ${arr.length}`);
+    // =================================================================
+    // unshift(): to add or inseert the element at the beginning of the given array
+    // var arr = [11,22,35,46,75]
+    // console.log(arr)
+    // console.log(`Length of the Given Array before unshift: ${arr.length}`);
+    // arr.unshift(5,6)
+    // console.log(arr)
+    // console.log(`Length of the Given array after unshift : ${arr.length}`);
+    // ======================================================================
+    // pop(): to remove the element from the end of given array & returned removed element
+    // var arr = [36,75,84,96,100]
+    // console.log(arr)
+    // console.log(`Length of the given array before pop : ${arr.length}`)
+    // var res = arr.pop()
+    // console.log(arr);
+    // console.log(`Removed Element from array : ${res}`);
+    // console.log(`Length of the given array after the pop : ${arr.length}`)
+    // ====================================================================
+    //shift(): to remove the element from beginning of the array & return removed element
+    // var arr = [23,45,78,98,19]
+    // console.log(arr)
+    // console.log(`Length of the given array before shift : ${arr.length}`);
+    // var res = arr.shift();
+    // console.log(arr);
+    // console.log(`Removed Element from array beginning : ${arr.length}`);
+    // console.log(`Length of the given after the shift() : ${arr.length}`); 
+    // ==============================================================================
+    // toString() : to convert array into String form
+    //    returned string will array values seperated by commas
+    // It does not change original array
+    // var arr = [23,43,51,67,89]
+    // console.log(arr)
+    // console.log(typeof arr)
+    // console.log(`Length of the given array before to-String : ${arr.length}`);
+    // var res = arr.toString();
+    // console.log(res);
+    // console.log(typeof res); 
+    // ==================================================================================
+    //join() : This method a new string by concating all the elements in an array 
+    //seperator by commas or any seperated string
+    // It does not change the original array
+    var arr = [64,45,18,29,37];
+    console.log(arr);
+    console.log(typeof arr)
+    console.log("======================");
+    var ar = arr.join();
+    console.log(ar);
+    console.log(typeof ar);
+    console.log("======================");
+    var ar = arr.join("-");
+    console.log(ar);
+    console.log(typeof ar);
+    // ==========================================
+    var ar = arr.join("/");
+    console.log(ar);
+    console.log(typeof ar);
+    // ==========================================
+   // reverse(): This method reverses the order of array element  
+   var arr = [16,78,91,42,35]
+   console.log(arr);
+   console.log(typeof arr);
+   console.log("======================");
+   arr.reverse();
+   console.log(arr);
+//    ============================================ 
+// sort(): This method sort the elements of given array
+// Overwrites the original array
+// Sort the Element in a String and Alphabetic and string number
+var arr = [12,16,19,45,72]
+var arr_name = ["Ujjwal","Ajay","Devgan","Bhuwenshwar"]
+console.log(arr);
+console.log(arr_name);
+console.log("======================");
+arr.sort();
+arr_name.sort();
+console.log("=================");
+console.log(arr);
+console.log(arr_name);
+// ===============================================
+//slice(): This method outpieces from an array and creates the new array
+// array.slice(start.end)
+var arr = [99,999,11,12,44,20,25,78,26,14,75,62] //end ://11,12,44
+console.log(arr);
+console.log("======================");
+var res = arr.slice(2,5);
+console.log(res);
+console.log(arr); //end:less than 1 size
+console.log("=======================");
+// ======================================================
+var arr = [77,89,25,64,12,23,45,89,87]
+console.log(arr);
+var ar = arr.splice(2,8)
+console.log(ar);
+console.log(arr);
+
+
+
+
+
+</script>

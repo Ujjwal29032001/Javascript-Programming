@@ -1,0 +1,201 @@
+<script>
+    // var arr        = [10,20,30,40,50,"Mahi","Chiku",22.23,true,'A'];
+    // // arr is variable  
+    // //arr convert into array type variable  
+    // //  [] : sub-script = > Represent  Array type 
+    // document.write(arr[0]+"<br>");
+    // document.write(arr[1]+"<br>");
+    // document.write(arr[2]+"<br>");
+    // document.write(arr[3]+"<br>");
+    // document.write(arr[4]+"<br>");
+    // document.write(arr[5]+"<br>");
+    // document.write(arr[6]+"<br>");
+    // document.write(arr[7]+"<br>");
+    // document.write(arr[8]+"<br>");
+    // document.write(arr[9]+"<br>"); 
+
+    // document.write("<hr/>")
+    // for(var i=0;i<10;i++) {
+    //     document.write(arr[i]+"<br/>")
+    // }
+// var arr;
+// arr = [10,20,30,"Mahi","CHIKU",22.23,null,33.34,true,"A"] ;
+// arr=100;
+// arr convert into array type variable
+// arr is variable
+// [] sub-script reprsent Array Type
+// document.write(arr)
+// document.write("</br>"+ typeof arr);
+// var res = Array .isArray(arr); // isArray Method return Boolean Value
+                               // iF variable is Array then return True otherwise False
+// document.write("Value of res is:"+res);
+
+// var len = arr.length // Length property to return numeric value or length 
+                        // of any given array
+// document.write("Length of Given ARRAY is :"+len)  
+// we also run it as an for loop
+// arr = [10,20,30,"Mahi","CHIKU",22.23,null,33.34,true,"A"] ;
+// var len = arr.length
+// for(var i=0; i<len; i++){
+    // document.write(arr[i]+"</br>")
+// }                        
+
+// For of Loop & FOR in LOOP WE USE ONLY IN ARRAY 
+
+// var arr;
+// arr = [10,20,30,'Mahi','A',22.23,null,33.34,true,"true"]
+// for(var ar of arr){
+//     document.write(ar+":"); // print
+// }  
+// FOR IN LOOP IN ARRAY
+// PRINT Indexing from Given Array
+// var arr
+//  arr = [10,20,30,'Mahi','A',22.23,null,33.34,true,"true"]
+
+    // for(var ar in arr){         
+    // document.write(ar+":")
+// }  
+
+// Print Element Using Indexing From Given ARRAY
+// var arr
+// arr=[10,20,30,'Mahi','A',22.23,null,33.34,true,"'true"]
+// for(var ar in arr){
+    // document.write(arr[ar]+":")
+// }      
+// for of array: fetch element from array => replace for loop in array
+// for in loop : fetch Indexing from array  
+
+// Sum of Array Eleemnts :
+//var arr;
+//arr = [10,20,30,40,50,60,70,80,90,100]
+//var sum =0;
+
+//Sum of Array Element using for Loop
+//for(var i=0; i<arr.length; i++){
+   // document.write(arr[i]+"&nbsp;&nbsp;")
+  //  sum = sum + ar;
+//}
+//document.write("<h1>Sum of Array Element is: "+sum+"</h1>")
+//Sum of Array Element using for LOOP
+//sum=0;
+//for(var ar in arr){
+    //documnet.write(arr[ar]+"&nbsp;&nbsp;")
+  //  sum = sum + arr[ar]
+//}
+//document.write("<h1>Sum of Array Element is"+sum+"</h1>")
+// Find the Maximum Elements from Given Array & Minimum 
+var arr;
+arr= [11,21,9,45,15,6,7,18,87,72]
+
+var max = arr[0]; //max=11
+var min = arr[0]; //min=11
+for(var i=0; i<arr.length; i++){
+    document.write(arr[i]+"&nbsp;&nbsp;")
+       document.write(arr[i]+"&nbsp;&nbsp;");
+       if(max<arr[i]){
+           max = arr[i]
+        }     //arr[1] => 11<21,21<9,21<45
+       if(min>arr[i]){
+           min = arr[i]
+       }
+    
+}   
+document.write("<br>Max: " + max);
+document.write("<br>Min: " + min);
+
+// Print Array Element in Ascending Order
+// Input: 11,21,9,45,15,6,7,18,87,72
+// Output : 6,7,9,11,15,,18,21,45,72,87  
+
+// var arr;
+// arr=[11,21,9,45,15,6,7,18,87,72]  
+// var temp;
+// document.write("<h1>Actual Array Element is : </h1>")    
+// for(var i=0; i<arr.length;i++)
+// {
+    // document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+//Logic Ascending Order
+// for(var i=0;i<arr.length;i++){
+    // for(var j=i+1;j<arr.length;j++)  
+// {
+    // if(arr[i]>arr[j]){
+        // temp = arr[i]
+        // arr[i] = arr[j];
+        // arr[j] = temp;
+    // }
+// }
+// }
+// document.write("<h1>Ascending Order Array Element is:</h1>")
+// for(var i=0; i<arr.length;i++)
+// {
+    // document.write(arr[i]+"&nbsp;&nbsp;");
+// }
+// for(var i=0;i<arr.length;i++){  
+    // for(var j=i+1;j<arr.length;j++)
+// {
+    // if(arr[i]<arr[j]){
+        // temp = arr[i]
+        // arr[i] = arr[j];
+        // arr[j] = temp;
+    // }
+// }
+// }
+// document.write("<h1>Descending   Order Array Element is:</h1>")
+// for(var i=0; i<arr.length;i++)
+// {
+    // document.write(arr[i]+"&nbsp;&nbsp;");
+// }
+
+ 
+// arr= [11,21,9,45,15,6,7,18,87,72];
+ //var temp;
+ //document.write("<h1>Actual Array Element is :</h1>");
+// for(var i=0;i<arr.length;i++){
+   //  document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+ // Logic : Reverse Order
+//for(var i=0;i<parseInt(arr.length/2);i++){
+  //    temp = arr[i];
+    //  arr[i] = arr[arr.length-1-i];
+      //arr[arr.length-1-i] = temp;
+       
+//}
+//document.write("<h1>Reverse Order Array Element is : </h1>")
+//for(var i=0;i<arr.length;i++){
+  //  document.write(arr[i]+"&nbsp;&nbsp;")
+//}   
+
+// 1) Sum of Even Indexing Elements From Given Array
+// 2) Print Odd Indexing Element From Given Array.
+// 3) Print Even Element From Given Array 
+// 4) Find the first two maximum & first two minimum element from given Array 
+// 5) Print Only repeated Element From Given Array 
+// 6) Remove repeated element from given Array 
+// 7) Given array : 11, 19 , 15,21,25,45,8,12,13,55;
+//    Note : check divisbile bt 5 elements & change value => Current value *3
+//    output : 11,19,45,21,75,135,8,12,13,165
+
+// Print the Given Elements in the Reverse Order In Arrays
+// var arr;
+// arr = [10,20,30,40,50,60,70,80,90,100]
+// document.write("<h1>Actual Array element Is: </h1>")
+// for(var i=0; i<arr.length;i++){
+//     document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// document.write("<h1>Actual element in Reverse Order : </h1>")
+// for(var i=arr.length-1; i>=0; i--){
+//      document.write(arr[i]+"&nbsp;&nbsp;")
+// }
+// Sum of Even Indexing elements from given array 
+// let array = [1,2,3,4,5];  // Example array
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i = i+2) {  // Loop through even indices
+    // sum = sum + array[i];
+// }
+
+// document.write("Sum of elements at even indices:", sum);  
+
+</script>   
+</script>   

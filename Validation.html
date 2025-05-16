@@ -1,0 +1,155 @@
+<html>
+    <script>
+        function init(){
+            myname = document.getElementById('name');
+            username = document.getElementById('username');
+            console.log(name+": :"+username);
+        }
+        function getData(){
+            //Get Value from Object
+            var nm = myname.value;
+            var unm = username.value;
+            console.log(nm+": :"+unm);
+            console.log(nm.length+":"+unm.length);
+            if(nm.length == 0){
+                alert("Please Enter Name")
+            }
+            if(unm.length == 0){
+                alert("Please Enter Username")
+            }
+        }
+    </script>
+    <body onload="init()">
+        <center>
+            <input type="text" placeholder="Enter Name" id="name"/>
+            <br><br>
+            <input type="text" placeholder="Enter Username" id="username"/>
+            <br><br>
+            <input type="button" value="Send data" onclick="getData()"/>
+
+        </center>
+    </body>
+</html>
+<!-- ============================================================================
+  -->
+  <html>
+    <script>
+        function init(){
+            myname = document.getElementById('name');
+            username = document.getElementById('username');
+            
+            err1 = document.getElementById('err1');
+            err2 = document.getElementById('err2');
+        }
+        function getData(){
+            //Get Value from Object
+            var nm = myname.value;
+            var unm = username.value;
+            // console.log(nm+": :"+unm);
+            // console.log(nm.length+":"+unm.length);
+            if(nm.length == 0){
+               err1.innerHTML ="*Plz Enter Name";
+               err1.style.color='red';
+            }
+            else{
+                err1.innerHTML= "";
+            }
+            if(unm.length == 0){
+               err2.innerHTML = "*Plz Enter User Name";
+               err2.style.color = 'red';
+            }
+            else{
+                err2.innerHTML = "";
+            }
+        }
+    </script>
+    <body onload="init()">
+        <center>
+            <input type="text" placeholder="Enter Name" id="name"/>
+            <span id="err1"></span>
+            <br><br>
+            <input type="text" placeholder="Enter Username" id="username"/>
+            <span id="err2"></span>
+            <br><br>
+            <input type="button" value="Send data" onclick="getData()"/>
+
+        </center>
+    </body>
+</html>
+<!-- ======================================================================= -->
+<html>
+    <script>
+        function init(){
+            myname = document.getElementById('name');
+            username = document.getElementById('username');
+            
+            err1 = document.getElementById('err1');
+            err2 = document.getElementById('err2');
+        }
+        function getData(){
+            //Get Value from Object
+            var nm = myname.value;
+            var unm = username.value;
+            // console.log(nm+": :"+unm);
+            // console.log(nm.length+":"+unm.length);
+            if(nm.length == 0){
+               err1.innerHTML ="*Plz Enter Name";
+               err1.style.color='red';
+            }
+            else{
+                err1.innerHTML= "";
+            }
+            if(unm.length == 0){
+               err2.innerHTML = "*Plz Enter User Name";
+               err2.style.color = 'red';
+            }
+            else{
+                err2.innerHTML = "";
+            }
+        }
+    </script>
+    <body onload="init()">
+        <center>
+            <input type="text" placeholder="Enter Name" id="name" onblur="getData"/>
+            <span id="err1"></span>
+            <br><br>
+            <input type="text" placeholder="Enter Username" id="username" onblur="getData"/>
+            <span id="err2"></span>
+            <br><br>
+            <input type="button" value="Send data" onclick="getData()"/>
+
+        </center>
+    </body>
+</html>
+<!-- ========================================================================== -->
+ <html>
+    <script>
+        function init(){
+            password = document.getElementById('password');
+            err1 = document.getElementById('err1');
+        }
+        function getData(){
+            //Get Value from object
+            var pass = password.value;
+            if(pass.length == 0){
+                err1.innerHTML = "Plz Enter Password";
+                err1.style.color = 'red';
+            }
+            else if(pass.length<5 || pass.length>8){
+                err1.innerHTML = "*Password Length Should be 5 to 8 Character";
+                err1.style.color = 'red';
+            }
+            else{
+                err1.innerHTML = "";
+            }
+        }
+    </script>
+    <body onload="init()">
+        <center>
+            <input type="text" placeholder="Enter Password" id="password" onkeyup="getData()"/>
+            <span id="err1"></span>
+            
+        </center>
+    </body>
+ </html>
+

@@ -1,0 +1,44 @@
+<!-- var std1 = {sid:101,sname:"Mahi",sfees:1234}
+var std2 = {sid:101,sname:"Mahi",sfees:1234}
+var std3 = {sid:101,sname:"Mahi",sfees:1234}
+
+var std =[std1,std2,std3];
+or
+var std =[{sid:,sname:,sfees:},
+var std ={sid:,sname:,sfees:},
+var std ={sid:,sname:,sfees:}] -->   
+
+<script>
+    var std1 ={'sid':101,'sname':'Mahi','sfees':1234.5};
+    var std2 ={'sid':102,'sname':'Chiku','sfees':12344.5};
+    var std3 ={'sid':103,'sname':'Piku','sfees':12345.5};
+
+    var std = [std1,std2,std3]; //Array of Objects
+    document.write("<h3>"+std[0].sid+":"+std[0].sname+":"+std[0].sfees+"</h3>")
+    document.write("<h3>"+std[1].sid+":"+std[1].sname+":"+std[1].sfees+"</h3>")
+    document.write("<h3>"+std[2].sid+":"+std[2].sname+":"+std[2].sfees+"</h3>")
+
+    document.write("</hr>")
+    for(var i=0;i<std.length;i++){
+        document.write("<h3>"+std[i].sid+":"+std[i].sname+":"+std[i].sfees+"</h3>")
+    }
+    document.write("</hr>")
+    for(var s in std){
+        document.write("<h3>"+std[s].sid+":"+std[s].sname+":"+std[s].sfees+"</h3>")
+    } 
+    // var std = [{'sid':101,'sname':'Mahi','sfees':1234.5},
+    //   {'sid':102,'sname':'Chiku','sfees':2234.5},
+    //  {'sid':103,'sname':'Piku','sfees':333.5}]  
+    //  console.log(std)
+    //  console.log(typeof std);
+
+    //  var st = JSON.stringify(std);
+    //  console.log(st);
+    //  console.log(typeof st);
+
+    //  var s = JSON.parse(st);
+    //  console.log(s);
+    //  console.log(typeof s);
+
+    //  JSON PLACEHOLDER - FREE FAKE REST API
+</script>

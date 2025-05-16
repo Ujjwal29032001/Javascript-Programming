@@ -1,0 +1,109 @@
+<script>
+//     var arr = new Array(11,21,23,43,12,13,19,21,34,32);
+//     //new keyword = New keyword is requred to create object
+//     document.write(arr+"</br>")
+//     document.write(arr.length+"<br/>");
+//     document.write("<hr/>");
+//     for(let ar of arr)
+// {
+//     document.write(ar+"</br>")
+// }
+// var arr = new Array(10);
+// document.write(arr+"</br>")
+// document.write(arr.length+"<br/>");
+
+// for(let ar of arr){
+//     console.log(ar)
+// }
+// //Value assign in Given Array
+//   arr[0] = 11;
+//   arr[1] = 21;
+//   arr[2] = 31;
+//   arr[3] = 41;
+//   arr[4] = 51;
+//   arr[5] = 61;
+//   arr[6] = 71;
+//   arr[7] = 81;
+//   arr[8] = 91;
+//   arr[9] = 101;
+
+//   for(let ar of arr){
+//     console.log(ar);
+//   }
+// // Multi-Dimensional Arrays or 2d-Arrays
+// It is also known as Array of Arrays combination of rows and columns Example-Matrix,Excel-Sheet
+
+
+var arr = [[11,22,33] ,[44,55,66],[77,88,99]];
+// 2) Number two step
+// document.write(arr[0][0]+"&nbsp;&nbsp;");
+// document.write(arr[0][1]+"&nbsp;&nbsp;");
+// document.write(arr[0][2]+"&nbsp;&nbsp;");
+// document.write("</br>")
+// document.write(arr[1][0]+"&nbsp;&nbsp;");
+// document.write(arr[1][1]+"&nbsp;&nbsp;");
+// document.write(arr[1][2]+"&nbsp;&nbsp;");
+// document.write("</br>")
+// document.write(arr[2][0]+"&nbsp;&nbsp;");
+// document.write(arr[2][1]+"&nbsp;&nbsp;");
+// document.write(arr[2][2]+"&nbsp;&nbsp;")   
+
+// 1) Complete Array  
+// document.write(arr.length+"</br>"); //3
+// document.write(arr[0].length+"</br>"); //3
+// document.write(arr[1].length+"</br>"); //4  
+// document.write(arr[2].length+"</br>"); //3 
+
+// 3) using for loop
+// for(var i=0; i<arr.length; i++){
+//     for(var j=0; j<arr[i].length; j++ ) {
+//         document.write(arr[i][j])
+//     }
+//     document.write("<br/>")
+// }
+
+// for(var ar of arr){
+//     for(var a of ar)
+// {
+//     document.write(a+"&nbsp;&nbsp;")
+// }
+// document.write("</br>")
+// }  
+// Two-D Arrays
+// var arr1 = [[11,22,33],[44,55,66,121],[77,88,99]]
+// var arr2 = [[10,20,30],[40,50,60,65],[70,80,90]]  
+
+// for(var i=0;i<arr1.length;i++){
+//     for(var j=0;j<arr1[i].length;j++){
+//         document.write(arr1[i][j]+"&nbsp;&nbsp;")
+//     }
+//     document.write("</br>")
+// }
+// document.write("</hr>") 
+// for(var i=0; i<arr2.length; i++){
+//     for(var j=0; j<arr2[i].length; j++){
+//         document.write(arr2[i][j]+"&nbsp;&nbsp;")
+//     }
+//     document.write("</br>")
+// }
+// document.write("</hr>") 
+
+// Addition of two matrix
+var arr1 = [[11,22,33],[44,55,66],[77,88,99]]
+var arr2 = [[10,20,30],[40,50,60],[70,80,90]]  
+for(var i=0;i<arr1.length;i++){
+    for(var j=0;j<arr1[i].length;j++){
+        document.write(arr1[i][j]+"&nbsp;&nbsp;")
+    }
+    document.write("</br>")
+}
+document.write("<hr/>")
+for(var i=0; i<arr2.length; i++){
+    for(var j=0; j<arr2[i].length; j++){
+        document.write(arr2[i][j]+"&nbsp;&nbsp;")
+    }
+    document.write("</br>")
+}
+document.write("</hr>") 
+document.write(arr1[i][j]+arr2[i][j]+"&nbsp;&nbsp;")
+</script>

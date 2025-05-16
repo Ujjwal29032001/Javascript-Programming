@@ -1,0 +1,100 @@
+<!-- <script> -->
+<!-- //how do you find max and min and secondlargest value in array without using any predfine method.
+// var arr = [11,22,16,18,48,45,20,23]
+// var arr = arr[1];
+// for(var i=0;i<arr.length;i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;");
+//     if(max<arr[i]){
+//         max=arr[i];
+//     }
+// }
+//document.write("<h1>Second Largest value of Array is "+max+"</h1>")
+// var max = arr[0] //max = 0
+// var min = arr[0] //min = 0
+// for(var i=0; i<arr.length; i++){
+//   document.write(arr[i] + "&nbsp;&nbsp;");
+//   if(max<arr[i]){
+//     max=arr[i];
+//   }
+//   if(min>arr[i]){
+//     min=arr[i]
+//   }
+   -->
+<!-- // }
+// document.write("<h1>Maximum Array element is :"+max+"</h1>");
+// document.write("<h1>Minimum Array Element is : "+min+"</h1>");
+// =======================================================================
+// let arr = [11,42,13,18,19,45,71,28,63,47,89];
+// let n = arr.length;
+
+// let highest = -Infinity;
+// let secondhighest = -Infinity;
+
+// for(let i=0; i<n; i++) {
+//     if(arr[i] > highest) {
+//         secondhighest = highest
+//         highest = arr[i];
+//     }
+// }
+// document.write(highest,secondhighest); -->
+<!-- // =========================================================== -->
+<script>
+// let p = new Promise((resolve,reject)=>{
+//     console.log("Promise is pending");
+//     setTimeout(()=>{
+//         console.log("I am a promise and i am fullfilled");
+//        resolve(true)
+//     },5000)
+// })
+// let p1 = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("Resolved after 2 seconds")
+//         resolve(56)
+//     },2000)
+// })
+// p1.then((value)=>{
+//     console.log(value)
+//         let p2 = new Promise((resolve,reject)=>{
+//             setTimeout(()=>{resolve("Promise 2")},2000)
+//             // resolve("Promise 2")
+//         })
+//         return p2
+// }).then((value)=>{
+//     console.log("We are done")
+//     return 2
+// }).then((value)=>{
+//     console.log("Now we are pakka done")
+// }) 
+// ============================================
+// let p1 = new Promise((resolve,reject)=>{
+//     console.log("Promise is pending ")
+//     setTimeout(()=>{
+//          console.log("I am a promise and I am Resolved")
+//          resolve(true)
+        
+//     },5000)
+// })
+// let p2 = new Promise((resolve,reject)=>{
+//     console.log("Promise is pending ")
+//     setTimeout(()=>{
+//          console.log("I am a promise and I am rejected")
+//         // resolve(true)
+//          reject(new Error("I am an Error"))
+//     },5000)
+// })
+// p1.then((value)=>{
+//     console.log(value)
+// })
+// p2.catch((error)=>{
+//     console.log("Some error ocuured in p2")
+// })
+
+// let promise1 = new Promise(resolve =>{
+//     setTimeout(()=>resolve ("done"),1000);
+// })
+// promise1.then(console.log);
+
+// let promise2 = new Promise (reject =>{
+//     setTimeout(()=>reject("NOT RUN"),1000);
+// })
+// promise2.catch(console.log);  

@@ -1,0 +1,169 @@
+<script>
+// <!-- 2) Explanation of Function : Without Return Value with Arguments -->
+// function add(x,y) // x=a and y=b here x and y both are formal parameter
+// {
+//    document.write("<h1>Value of x is :"+x+"<h1>");
+//    document.write("<h1><br>Value of y is :"+y+"</h1>");
+//    document.write("<h1><br>Addition of two variables :"+(x+y)+"</h1>")
+// } 
+// var a = parseInt(prompt("Ënter the Value of a"));
+// var b = parseInt(prompt("Enter the value of b"))
+// add(a,b);  // a and b are actual parameters
+
+// function of factorial without return value with arguments
+// function fact(num) //num=n
+// {
+    // var f = 1;
+    // for(var i=1; i<=num; i++) {
+        // f = f * i
+    // }
+    // document.write("<h1>Factorial is :"+f+"</h1>")
+// }
+// var n = parseInt(prompt("Enter Any Number"))
+// fact(n)  
+
+// Addition of two variable using function with return value with Arguments
+// function add(x,y)
+// {
+    // z = x+y;
+    // return z;
+// }
+// var a = parseInt(prompt("Enter the value of a"));
+// var b = parseInt(prompt("Enter the value of b"));
+// let res = add(a,b)
+// document.write("<h1>Value of res :"+res+"</h1>") 
+
+// Check given number i Even or odd using return value with argumnets
+// function check_num(num) //num=n
+// {
+    // if(num%2==0){
+//         // return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+// var n = parseInt(prompt("Enter Any Number"))
+// var res = check_num(n)
+// if(res == true){
+//     document.write("<h1>Given Number is Even</h1>")
+// }
+// else{
+//     document.write("<h1>Given Number is odd</h1>")
+// }  
+// // function prime(num){
+//     count = 0;
+//     for(var i=1; i<=num; i++){
+//         if(i%2==0){
+//             count++
+//         }
+//     }
+//     return count
+// }
+// var n = parseInt(prompt("Enter Any Number"))
+// var res = prime(n)
+// if(res == 2){
+//     document.write("<h1>given number is Prime: <h1>")
+// }
+// else{
+    // document.write("<h1>Given number is not prime: ")
+// }  
+// print given number is armstrong or not using function with return 
+// with argumnets
+/*
+function check_num(num){
+    var temp = num;
+    var rem;
+    var sum = 0;
+    while(num != 0){
+        rem = num%10;
+        sum = sum + rem*rem*rem
+        num = parseInt(num/10)
+    }
+    if(sum == temp){
+        return true
+    }
+    else{
+        return false;
+    }
+}
+var n = parseInt(prompt("Enter Any Number"))
+var res = check_num(n)
+if(res == true){
+    document.write("Given Number is ArmsStrong");
+}
+else{
+    document.write("Given Number is not ArmsStrong")
+}
+*/
+/*
+function check_num(num){
+    var rem;
+    var sum = 0;
+    while(num!=0){
+        rem = sum%10;
+        sum = sum + rem*rem*rem
+        num = parseInt(num/10)
+    }
+    return sum;
+}
+var n = parseInt(prompt("Enter Any Number"))
+var res = check_num(n)
+if(res == n){
+    document.write("Given Numbe ris ArmsStrong")
+}
+else{
+    document.write("Given Number is Not ArmStrong");
+*/
+// Assignment function or variable function
+var x =10;
+console.log("Value of x is :"+x); //10
+console.log("Type of x is :"+typeof x); //number
+
+function show(){
+    console.log("Show Called..")
+}
+console.log("Value of Show is :"+show); //print show function
+console.log("Type of x is :"+typeof show); //function
+
+x = 'mahi';
+console.log("Value of x is :"+x); //mahi
+console.log("Type of x is :"+typeof x); //String
+
+x = show;
+console.log("Type of x is :"+typeof x); //function
+console.log("Type of x is :"+typeof show);//function
+ x(); //=> //Function Calling
+show();
+// ===================================================
+function show()
+{
+    console.log("Show Called..");
+}
+show();
+var x = show; //here x is Assignment or variable function
+x(); //Function Calling
+show();
+
+show = 100; //show convert into number type
+console.log("Type of Show is : "+typeof show); //number
+x();
+// Show ko print karna hai
+console.log(show);
+show; //error show is not a function
+
+// Function ko variable mai assign karna hai
+// Annonumus function
+function show(){
+    console.log("Function Invoked")
+}
+var x = function() //Annonmus function
+{
+    console.log("Function Invoked")
+}
+console.log("Type of x is :"+typeof x); //function
+x();
+
+// Addition of two number using Annonmus function
+
+</script>

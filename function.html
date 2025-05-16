@@ -1,0 +1,263 @@
+<script>
+    // function sub()
+    // {
+    //     var x = ParseInt(prompt("Enter the Value of X"));
+    //     var y = parseInt(prompt("Enter th Value of y"));
+    //     var z = x-y;
+    //     document.write(z);
+
+    // }
+    // sub;
+
+    // function mul()
+    // {
+    //     var x = ParseInt(prompt("Enter the Value of X"));
+    //     var y = parseInt(prompt("Enter th Value of y"));
+    //     var z = x*y;
+    //     document.write("Value of Multiplication is :", z);
+    // }
+    // mul();
+
+    // function evenodd()
+    // {
+    //     var a = parseInt(prompt("Enter the Value a"));
+    //     if(i%2==0){
+    //         document.write("The Given number is even :"+a)
+    //     }
+    //     else{
+    //         document.write("The Given number is odd :"+a)
+    //     }
+    // }
+    // evenodd() 
+
+    // function table()
+    // {
+        // var a = parseInt(prompt("Enter a Number"))
+        // for(var i=1;  i<=10; i++){
+            // document.write(a+"*"+i+"="+(a*i)+"</br>")
+        // }
+    // }
+    // table();
+    // Check Given Number is Prime or Not
+    // function prime()
+    // {
+        // var num = parseInt(prompt("Enter given number is prime or Not"));
+        // var count =0;
+        // for(var i=1; i<=num; i++ ){
+            // if(num%i==0){
+                // count++
+            // }
+        // }
+        // if(count == 2){
+    //   document.write("<h1>Given Number is Prime</h1>")
+//  }
+//  else{
+    //  document.write("<h1>Given number is Not prime</h1>")
+//  }  
+    // }
+// Check given Number is Armstrong or not    
+// function armstrong()
+// {
+    // var num = parseInt(prompt("Enter any number"));
+    // var temp = num;
+    // var sum = 0;
+    // document.write("<h1>Gien num is:"+num+"</h1>");
+    // for(; num!=0; num=parseInt(num/10)){
+        // rem = num%10;
+        // sum = sum +rem*rem*rem
+
+    // }
+    // if(temp == sum){
+        // document.write("<h1>Given Number is ArmsStrong :"+sum+"</h1>")
+    // }
+    // else{
+        // document.write("<h1>Given Number is not ArmStrong :"+sum+"</h1>")
+    // }
+// }
+// armstrong();
+// function add()
+
+// {
+    // var x=10;
+    // var y=20;
+    // var z= x+y;
+    // console.log("<h1>Addition of two variables is :"+z);
+// }
+// add();
+    //  x=10;
+    //  y=20;
+    //  z= x+y;
+    // console.log("<h1>Addition of two variables is :"+z); 
+// Plaindrome or not    
+// function plaindrome()
+// {
+//     var num = parseInt(prompt("Enter the Value of Plaindrome "));
+//     var temp = num;
+//     var sum = 0
+//     document.write("<h1>Given num is :"+sum+"</h1>")
+//     while(num!=0){
+//         rem = num%10;
+//         sum = sum+rem*10
+//         num = parseInt(num/10);
+//     }
+//     if(temp == sum){
+//         document.write("<h1>Given Number is plaindrome :"+sum+"</h1>")
+//     }
+//     else{
+//         document.write("<h1>Given Number is Not plaindrome :"+sum+"</h1>")
+//     }
+// }
+
+// Example of Function Involved
+// console.log("Before Function Invoked") 
+// function hello() //prototype keyword
+// {
+    // console.log("Hello Function Invoked")
+// }
+// hello() //calling Controller search hello defination & excecute hello defination
+// console.log("After function invoked :");
+
+// console.log("Before Function Invoked")
+// hello();
+// function hello() 
+// {
+//     console.log("hello Function Invoked")
+// }
+// console.log("After Function invoked")
+
+//2)Explanation of Function: Without return value with Arguments
+// function add(x,y) // x= a and y=b here x and y both are formal parameter
+// {
+    // document.write("Value of x is :"+x);
+    // document.write("</brValue of y is :"+y);
+    // document.write("<h1>Add is : "+(x+y)+"</h1>");
+// }
+// var a = parseInt(prompt("Enter the value of x"));
+// var b = parseInt(prompt("Enter the value of b"));
+// add(a,b) //Call by value or call by parmeter
+// 3)Function of factorial
+// function fact(num)  // num = n
+// {
+//     var f = 1;
+//     for(var i =1; i<=num; i++){
+//         f = f * i;
+//     }
+//     document.write("<h1>Factorial is :"+f+"</h1>")
+// }
+// var n = parseInt(prompt("Enter Any Number"));
+// fact(n) // call by value or call by actual parameter
+
+// 4) Addition of two variable using functionwith return value with Arguments
+// function add(x,y)
+// {
+//     z = x+y;
+//     return z;
+// }
+// var a = 100;
+// var b = 300;
+// var res = add(a,b);
+// document.write("Value of res : "+res);
+
+// function check_num(num) //num = n
+// {
+//     if(num%2 ==0)
+// {
+//     return true
+// }
+// else{
+//     return false
+// }
+// }
+// var n = parseInt(prompt("Enter Any  Number"))
+// var res = check_num(n) // call by value or call by actual parameter
+// if(res == true){
+//     document.write("<h1>Given number is Even")
+// }
+// else{
+//     document.write("<h1>Given Number is Odd</h1>")
+// }
+
+// function check_num(num) //num=n
+// {
+//     count = 0
+//     for(var i=1;i<=num;i++){
+//         if(num%i==0){
+//             count++;
+//         }
+//     }
+//     if(count == 2){
+//         return true
+//     }
+//     else{
+//         return false;
+//     }
+// }
+//  var n = parseInt(prompt("Enter Any Number"));
+//  var res = check_num(n)
+//  if(res == true){
+//     document.write("<h1>Given number is prime</h1>")
+//  }
+//  else{
+//     document.write("<h1>Given numbe ris not pRime</h1>")
+//  }
+ 
+// function check_num(num) //num = n
+// {
+//     count = 0;
+//     for(var i=1;i<=num;i++){
+//         if(num%2==0){
+//             count++
+//         }
+//     }
+//     return count;
+// } 
+// var n = parseInt(prompt("Enter Any Number"))
+// var res = check_num(n) call by value or call by actual parameter
+// if(res == 2){
+//     document.write("<h1>Give Numbe ris Prime")
+// }
+// else{
+//     docuemnt.write("<h1>Given Numbe ris Not prime<h1>")
+// }    
+// Subtraction , Multiplication of two variable using function with return value with argumnets
+// Check GivenNumber is Armstrong or not using function with return value with arguments 
+// function sub(x,y){
+//     var z = x-y
+//     return z;
+// }
+// a = 30
+// b = 10
+// var res = sub(a,b)
+// document.write("<h1>Subtraction of two variable is :"+res+"</h1>")
+
+// function Mul(x,y){
+//     var z = x*y
+//     return z;
+// }
+// a = 30
+// b = 10
+// var res = Mul(a,b)
+// document.write("<h1>Multiplication of two variable is :"+res+"</h1>") 
+
+
+
+function armstrong(num){
+    var num  = parseInt(prompt("Enter any Number"))
+    let temp = sum;
+    sum = 0
+    document.write("<h1>Given Number is "+num+"</h1>")
+    for(; num!=0; num = parseInt(num/100)){
+        rem = num%10
+        sum = sum + rem*rem*rem
+    }
+    return sum
+    let res = if(temp == sum){
+        document.write("<h1>Given Number is ArmStrong :"+sum+"</h1>")
+    }
+    else{
+        document.write("<h1>Given Numer is not ArmStrong :"+sum+"</h1>")
+    }
+         
+
+}
+</script>

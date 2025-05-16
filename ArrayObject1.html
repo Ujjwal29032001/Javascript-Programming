@@ -1,0 +1,37 @@
+<script>
+//     var std1 = {'sid':101,'sname':'Mahi','sfees':1234.5};
+//     var std2 = {'sid':102,'sname':'Chiku','sfees':1234.6};
+//     var std3 = {'sid':103,'sname':'Piku','sfees':1234.7};
+//     or
+//     var std = [std1,std2,std3];
+//     document.write("<h3>"+std[0].sid+":"+std[0].sname+":"+std[0].sfees+"</h3>");
+//     document.write("<h3>"+std[1].sid+":"+std[1].sname+":"+std[1].sfees+"</h3>");
+//     document.write("<h3>"+std[2].sid+":"+std[2].sname+":"+std[2].sfees+"</h3>");
+//     document.write("<hr>")
+
+//     for(var i=0; i<std.length;i++){
+//         document.write("<h3>"+std[i].sid+":"+std[i].sname+":"+std[i].sfees+"</h3>")
+//     }
+//    document.write("<hr>")
+//    for(var s in std){
+//     document.write("<h3>"+std[s].sid+":"+std[s].sname+":"+std[s].sfees+"</h3>")
+//    }    
+
+var std = [{'sid':101,'sname':'Mahi','sfees':1234.5},
+           {'sid':102,'sname':'Piku','sfees':1234.6},
+           {'sid':103,'sname':'Chiku','sfees':1245.9}
+]
+//console.log(std)
+//console.log(typeof std)   
+
+var st = JSON.stringify(std)
+console.log(st)
+console.log(typeof st)   
+
+var s = JSON.parse(st)
+console.log(s)
+console.log(typeof s)
+
+
+</script>
+   

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+    <script>
+        // Javascript program to find the largest among two number using ternary 
+        // operator   
+        // variable declaration
+        //  var n1 = 5, n2 = 10, max; 
+        
+        
+
+        //  largest among n1 and n2 
+        //  max = (n1>n2) ? n1 : n2;
+        // document.write("Largest number between: " + n1 + "and" + n2 + "is" + max + ".");
+
+        // Javascript program to find the largest among three number using ternary operator
+        // Variable declaration
+
+        // var n1 = 10;
+        // var n2 = 20;
+        // var n3 = 30;
+
+        // Ternary Operator
+        // (condition)  ?  true statements.. : false statements...  
+
+        // Check given number Positive or Negative using Ternary Operator
+        //    What is positive: num > 0
+            //   What is Negative -value : num <  
+        // var num = parseInt(prompt("Enter any Number "));
+        
+        // (num>0) ? document.write("<h1>Positive</h1>") ? document.write("<h1>Negative</h1>")
+
+        // (num>=0)  ? ((num==0 ? document.write("<h1>Zero</h1>") : document.write("<h1>Positive</h1>")))
+        // : document.write("<h1>Negative</h1>") 
+        
+    // var x = parseInt(prompt("Enter the value of x"));
+    // var y = parseInt(prompt("Enter the value of y"));
+    // console.log("value of x is :"+x);
+    // console.log("Value of y is :"+y);   
+         
+    // res = x>y;
+    // console.log("Value of res (x>y) is: "+res);
+         
+    // res = x<y;
+    // console.log("Value of res (x<y) is: "+res);
+         
+    // res = x>=y; // Greater than equal 
+    // console.log("Value of res (x>=y) is: "+res);
+         
+    //  res = x<=y;  //less than equal
+    // console.log("Value of res (x<=y) is: "+res);
+         
+    // res = x==y;  //== Comparison between two variables values/data
+    // console.log("Value of res (x==y) is: "+res);
+         
+    // res = x!=y;   //!= Not equal if two variables values are not equal then return true other-wise false.
+    // console.log("Value of res (x!=y) is: "+res);
+    
+    // print Given number into reverse order  without using any loop (only 3 digit number)
+    /*
+    num = 123 => 321 
+    */ 
+    // var num = parseInt(prompt("Enter any Number"));
+    // var first ;
+    // var middle ;
+    // var last ;  
+    // document.write("<h1>Given Number :"+num+"</h1>")
+    // last = num%10; // last => 123%10 = remainder 3
+    // middle = (parseInt(num/10))%10 //middle = 12%10 = 2
+    // first = parseInt(num/100) // first= 123/100 = 1
+
+    // var rev = last*100 + middle*10 + first;
+    // document.write("<h1>print given number into reverse order : "+rev+"</h1>")
+
+    //  Sum first third fifth enter 6 digit number from the user
+
+   // var num = parseInt(prompt("Enter the 6 digit Number"));
+   // document.write("the num is",num) 
+
+   // let first = parseInt(prompt(num/100000));
+   // let third = parseInt(prompt(num/1000))%10;
+   // let fifth = parseInt(prompt((num/10)%10));
+
+  //  let sum = first + third + fifth ;
+   // document.write(" the sum of  ", first , third , fifth, " digit is ", sum,"  from 6 digit ");
+
+//    Check Given number is plaindrome  or not without using any loop (only 3 digit number)
+/*
+ Num : 121 =>
+     : 111
+     : 323
+*/ 
+//  var num = parseInt(prompt("Enter any Number")); 
+// var first; 
+// var middle; 
+// var  last;  
+// document.write("<h1>Given Number : "+num+"</h1>")  
+// last = num%10;   //=> last => 121%10 => 1
+// first = parseInt(num/100); // first = 121/100 => 1 
+// (first == last) ? document.write("<h1>Plaindrone : </h1>") : document.write("<h1>Not plaindrome</h1>") 
+// ==================================================
+//1) Sum of Even Indexing Elements From Given Array
+// 2) Print Odd Indexing Element From Given Array.
+// 3) Print Even Element From Given Array 
+// 4) Find the first two maximum & first two minimum element from given Array 
+// 5) Print Only repeated Element From Given Array 
+// 7) Given array : 11, 19 , 15,21,25,45,8,12,13,55;
+//    Note : check divisbile bt 5 elements & change value => Current value *3
+//    output : 11,19,45,21,75,135,8,12,13,165// 6) Remove repeated element from given Array 
+
+// =====================================================
+// print Even elements from   Given array
+// var arr = [1,2,3,4,5,6]
+// document.write("Even elements from given Array :");
+// for(let i=0;i<arr.length;i++){  //start indexing from 0
+//     if(arr[i]%2==0)             //Check if the Even element  
+//     document.write(arr[i]+" ");   //Prin tthe evn Number
+// }
+
+// ====================================================
+// Sum of Odd Indexing Elements from Gien array
+// var arr = [1,2,3,4,5,6]
+// document.write("Odd elements from given array :");
+// for(let i=0;i<arr.length;i++){    //start indexing from 0
+//     if(arr[i]%2!==0)               //Check if the Odd element 
+//     document.write(arr[i]+" ");    //Print the Odd Number
+// }
+// ===============================================
+//Sum of even indexing Elements from given array
+// var arr = [1,2,3,4,5,6,7,8,9,10]
+// var sum=0
+// document.write("Sum of Even Indexing Elements from Given Array :")
+//for(let i=0;i<arr.length;i=i+2){
+    //if(var arr[i]%2==0){
+   // console.log()
+   // }
+    //sum = sum + arr[i];
+//}
+//document.write(sum);
+//  Find the First Two maximum & Two Minimum Elements from Given array
+//var arr = [11,21,9,45,15,6,7,18,87,72]
+//var max1 = arr[0], max2=arr[0];
+//var min1 = arr[0], max2=arr[0];
+// ====================================================
+//Given array : 11,19,15,21,25,45,8,12,13,45
+//    Note : check divisbile bt 5 elements & change value => Current value *3
+//    output : 11,19,45,21,75,135,8,12,13,165
+//  var arr= [11,19,15,21,25,45,8,12,13,45]
+// document.write("divisible between 5 elements and current value multiply by 3")
+// for(var i=0;i<arr.length;i++){
+//     if(arr[i]%5==0){
+//         var newValue =    arr[i] * 3;
+//         document.write(newValue +"<br>");
+        
+//     }
+// }
+// // ====================================================
+ //print only Repeated elements from Given array
+
+ 
+
+// var arr = [11,12,11,12,13,45,68,14,14,19,19];
+// for(var i=0;i<arr.length;i++){
+//     for(var j=i+1;j<arr.length;j++){
+//         if(arr[i] ==  arr[j]){
+//             document.write("Duplicate Element: "+arr[i])
+//         }
+//     }
+
+// }
+var arr = [11,12,11,12,13,45,68,14,14,19,19];
+for(var i=0; i<arr.length;i++){
+    for(var j=i-1;j<arr.length;j--){
+        if(arr[i] == arr[j]){
+            document.write(" Remove Duplicate Element is :"+arr[i]+"<br>")
+        }
+    }
+}
+// Outer loop (i)	Inner loop (j starts from i+1)	Comparison (arr[i] == arr[j])
+// i = 0 (arr[0] = 11)	j = 1 (arr[1] = 12)	11 == 12 → ❌
+// j = 2 (arr[2] = 11)	11 == 11 → ✅ (Duplicate)
+// j = 3 (arr[3] = 13)	11 == 13 → ❌
+// i = 1 (arr[1] = 12)	j = 2 (arr[2] = 11)	12 == 11 → ❌
+// j = 3 (arr[3] = 13)	12 == 13 → ❌
+// i = 2 (arr[2] = 11)	j = 3 (arr[3] = 13)	11 == 13 → ❌
+// i = 3 (arr[3] = 13)	No j left to compare	Loop ends
+
+//Remove Duplicate Elements from an array
+//var arr = [11,11,22,4,4,5,6,6,9,7,9]
+//var uniqueArr = [...new Set(arr)];
+//document.write(arr);  
+//==============================================
+
+    
+</script>      
+</head>
+<body>
+    
+</body>
+</html>

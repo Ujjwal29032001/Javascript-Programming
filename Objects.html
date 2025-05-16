@@ -1,0 +1,47 @@
+<script>
+    var emp = {
+        "eid": 101, "ename": "Mahi", "esal": 1234.5, "emobile": "123456789",
+        "address": { 'street_no': 1, 'area': 'LIG', 'city': 'Indore', 'Pin': '452010' }
+    };
+    console.log("Emp Details is :" + emp);
+    console.log("Type of Emp is  :" + typeof emp);
+
+    //Data Access From Object : object.keyname
+    console.log("Employee Id is : " + emp.id)
+    console.log("Employee Name is : " + emp.ename)
+    console.log("Employee Salary is : " + emp.esal)
+    console.log("Employee Mobile is : " + emp.emobile)
+
+    /*
+    console.log("Employee Address is :"+emp.Address)
+    console.log("ADdress Type is : "+typeof emp.address)
+    */
+    console.log("Address :" + emp.address.street_no + ":" + emp.address.area + ":" + emp.address.city + ":"
+        + ":" + emp.address.pincode
+    );
+    // for fetching the key into the objectnngh
+
+    for (var k in emp)  //k is key
+    {
+        console.log(k + ":" + emp[k]); // emp[eid], emp[ename] , emp[esal] , emp[emobile]
+    }
+
+    //    This is for address  
+
+    var emp = {
+        "eid": 101, "ename": "Mahi", "esal": 1234.5, "emobile": "123456789",
+        "address": { 'street_no': 1, 'area': 'LIG', 'city': 'Indore', 'Pin': '452010' }
+    };
+    for (var k in emp) {
+        if (typeof emp[k] == 'object') {
+            for (var key in emp[k]) {
+                console.log(key + ":" + emp[k][key])
+            }
+        }
+        else {
+            console.log(k + ":" + emp[k])
+        }
+    }
+//  Array of Objects or JSON s   
+
+</script>

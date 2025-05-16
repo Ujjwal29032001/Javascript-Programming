@@ -1,0 +1,337 @@
+<script>
+// <!-- Print the Given Number into reverse order -->
+//  <!-- num- 12345
+//  output - 54321 -->
+//  var num = parseInt(prompt("Enter the Number"))
+//  var sum = 0
+//  document.write("<h1>Given Number : "+num+"</h1>");
+//  while(num!=0) {
+    // rem = num % 10;
+    // sum = sum*10 + rem;
+    // num = parseInt(num/10)
+//  }
+//  document.write("<h1>Print the Given Number into reverse order :"+sum+"</h1>")
+/*
+num = 123 :
+123 != 0 ======true===>rem = 123 % 10
+                           = 3
+                       sum = sum + rem
+                           = 0*10 + 3
+                       num = 123/10
+                           = 12    
+12 != 0 ========true====> rem = 12 %10
+                              = 2
+                          sum = 3*10 + 2
+                              = 32
+                          num = 12/10
+                              = 1
+1 != 0 =========true====> rem = 1 % 10
+                              = 1
+                          sum = 32*10 + 1
+                              = 321
+                          num = 1/10
+                              = 0
+*/
+// Print the Given Reverse Order using  For Loop 
+// var num = parseInt(prompt("Enter the Number"))  
+// var sum = 0;
+// document.write("<h1>Given Number "+num+"</h1>");   
+// for(; num!=0; num = parseInt(num/10)){   
+    //  let rem = num % 10;  
+    //  sum = sum*10 + rem;  
+// }
+// document.write("<h1>print the Given Number into reverse Order : "+ sum +"</h1>")  
+// for(;) Intialization Normally, the first part of a for loop is used to initialize a loop variable. Here, it is left empty because the variable num is already defined and initialized outside the loop.
+// Print the Given Number is Armstrong or Not 
+/*
+ArmStrong : 123 : 1*1*1 + 2*2*2 + 3*3*3 : 1+8+27 = 36 => Not ArmStrong
+          : 153 : 1*1*1 + 5*5*5 + 3*3*3 : 1+125+27 : 153 => ArmStrong
+          : 370 : 3*3*3 + 7*7*7 + 0*0*0 : 27+343+0 : 370 => ArmStrong
+          : 371 : 3*3*3 + 7*7*7 + 1*1*1 : 27+343+1 : 371 => ArmStrong
+          : 407 : 4*4*4 + 0*0*0 + 7*7*7 : 64+0+343 : 407 => ArmStrong
+          : 1684 : 1*1*1* + 6*6*6*6 + 8*8*8*8 + 4*4*4*4 => 1+1296+4096+256=> Not Armstrong 
+*/
+// var num = parseInt(prompt("Enter Any Number"));
+// var temp = num;
+// var sum = 0;
+// document.write("<h1>Given number :"+num+"</h1>");
+// while(num !=0) 
+// {
+    // rem = num %10
+    // sum = sum + rem*rem*rem
+    // num = parseInt(num/10)
+// }
+// if(temp == sum ){
+    // document.write("<h1>Given Number is ArmStrong : "+sum+"</h1>")
+// }
+// else{
+    // document.write("<h1>Given Number is Not ArmStrong :"+sum+"</h1>")
+// } 
+/*
+153 != 0=====true=====> rem = 153 %10
+                            = 3
+                        sum = sum + rem*rem*rem
+                            = 0   + 3*3*3
+                            = 27
+                        num = 153/10
+                            = 15
+15 != 0======true=====> rem = 15%10
+                            = 5
+                        sum = sum + rem*rem*rem
+                            = 27   + 5*5*5
+                            = 152
+                        num = 15/10
+                            = 1
+1 !=0 =======true=====> rem = 1 % 10 = 1
+                        sum = sum + rem
+                            =  152 + 1*1*1 
+                            =  153
+                        num = 1/10
+                            = 0    
+*/ 
+// Check Given number is ArmStrong or not using for Loop
+// var num = parseInt(prompt("Enter Any Number"));  
+// var temp = num; 
+// var sum = 0;
+// document.write("<h1>Given Number :"+num+"</h1>")
+// Use a For Loop through iterate through digits
+// for(; num !=0; num=parseInt(num/10)) {
+    //   rem = num % 10;
+    //   sum = sum + rem*rem*rem;
+
+// }
+// if(temp == sum){
+    // document.write("<h1>Given Number is ArmStrong :"+sum+"<h1>")
+// }
+// else{
+    // document.write("<h1>Given Number is Not Armstrong :"+sum+"</h1>")
+// }
+// Given Number is plaindrome or Not  
+
+// var num = parseInt(prompt("Enter Any Number"))
+// var temp = num
+// var sum = 0;
+// document.write("<h1>Given Number :"+num+"</h1>");
+// while(num !=0){
+    // rem = num %10;
+    // sum = sum*10 + rem;
+    // num = parseInt(num/10);
+// }
+// if(temp == sum) {
+    // document.write("<h1>Given Number is plaindrome :"+sum+"</h1>")
+// }
+// else{
+    // document.write("<h1>Given Number is not plaindrome :"+sum+"</h1>")
+// }
+// Given numbe ris plaindrome or not using for loop
+// var num = parseInt(prompt("Enter any Number"))
+// var temp = num
+// var sum = 0;
+// document.write("<h1>Given num is :"+num+"</h1>")
+// for(; num !=0; num=parseInt(num/10)){
+    // rem = num%10;
+    // sum = sum*10 + rem
+// }
+// if(temp == sum){
+    // document.write("<h1>Given number is plaindrome : "+sum+"</h1>")
+// }
+// else{
+    // document.write("<h1>Given Number is Not Plaindrome : "+sum+"</h1>")
+// }  
+// Sum of Digits from Given Number
+// var num = parseInt(prompt("Enter Any Number"));  
+// var sum = 0;
+// document.write("<h3>Given number is : "+num+"</h3>");  
+// while(num != 0)
+// {
+//    var rem = num%10;  
+//    sum = sum +rem;
+//    num = parseInt(num/10);
+// }
+// document.write("<h1>Sum of Digits is :"+sum+"</h1>")  
+// document.write("<h1>Bye...</h1>"); 
+
+// print the series of odd number & sum of odd number upto n number
+// var num = parseInt(prompt("Enter the Odd Number"));  
+//  var sum = 0 
+// for(var i = 1; i<=num; i++){    
+    // if(i%2!==0){   
+        //  sum = sum+i
+        // document.write("<h3>"+i+"</h3>") 
+
+    // }  
+    
+    // document.write("The Sum of odd Numbers Upto n Number: "+sum)
+// }  
+// sum of Even numbers upto n numbers 
+//  var num = parseInt(prompt("Enter the Number"))
+//  var sum = 0;
+//  for(var i =2; i<=num; i++){
+    //  if(i%2==0){
+        // sum = sum + i;
+        //   document.write("<h3>"+i+"</h3>")
+    //  }
+    
+    
+
+//  }
+//  document.write("<h3>Bye...</h3>")
+
+// Jumping Statements
+//var choice = parseInt(prompt("Press 1\n Press 2\n Press3\n Press4\n"));
+//switch(choice)
+//{
+  //  case 1:{
+    //    document.write("<h1>Hello Students...</h1>")
+    //}
+    //case 2:{
+      //  document.write("<h1>HII STUDENTS....</h1>")
+       // break;
+    //}
+    //case 3:{
+      //  document.write("<h1>Hello Students How r u ? </h1>");
+       // break;
+    //}
+//     case 4:{
+//         document.write("<h1>Hello Students Happy New Year </h1>");
+//     }
+//     default:{
+//         document.write("<h1>Your Choice is Invalid");
+//         break;    
+//     }
+// }
+// var choice = parseInt(prompt("Press + for Add\n Press - for Sub\n Press * for Multi\n Press / for Div\n  Press % for Modulus\n" ))
+// var x;
+// var y;
+// switch(choice)
+// {
+//     case '+':{
+//         x= parseInt(prompt("Enter the value of X"));
+//         y= parseInt(prompt("Enter the value of Y"));
+//         document.write("<h1>Addition is :"+(x+y)+"</h1>")
+//     }
+//     case '-':{
+//         x= parseInt(prompt("Enter the value of X"));
+//         y= parseInt(prompt("Enter the value of Y"));
+//         document.write("<h1>Subtraction is :"+(x-y)+"</h1>")
+//     }
+//     case '*':{
+//         x= parseInt(prompt("Enter the value of X"));
+//         y= parseInt(prompt("Enter the value of Y"));
+//         document.write("<h1>Multiplication is :"+(x*y)+"</h1>")
+//     }
+//     case '/':{
+//         x= parseInt(prompt("Enter the value of X"));
+//         y= parseInt(prompt("Enter the value of Y"));
+//         document.write("<h1>Division is :"+(x/y)+"</h1>")
+//     }
+//     case '%':{
+//         x= parseInt(prompt("Enter the value of X"));
+//         y= parseInt(prompt("Enter the value of Y"));
+//         document.write("<h1>Modulus is :"+(x%y)+"</h1>")
+//     }
+//     default:{
+//         document.write("<h1>Invalid Any choice </h1>");
+//     }
+// }
+                        
+// print the Array elements in Acsending Order
+// var arr;
+// arr = [5,2,8,7,1]
+// var temp;
+// document.write("<h1>Array Element is: </h1>");
+// for(var i=0; i<arr.length;i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;")
+// } 
+// for(var i=0; i<arr.length; i++){
+//     for(j=i+1; j<arr.length; j++){
+//         if(arr[i] > arr[j]){
+//             temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp;
+
+//         }
+
+//     }
+// }
+// document.write("<h1>Ascending Order Array Element is : </h1>")
+// for(var i=0; i<arr.length; i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;")
+// }
+ 
+ 
+<!-- // Print the Array Element in descending Order 
+// var arr;
+// arr = [5,2,8,7,1]
+// var temp;
+// document.write("<h1>Array Element is: </h1>");
+// for(var i=0; i<arr.length;i++){
+//     document.write(arr[i] + "&nbsp;&nbsp;")
+// } 
+// for(var i=0; i<arr.length; i++){
+//     for(j=i+1; j<arr.length; j++){
+//         if(arr[i] < arr[j]){
+//             temp = arr[i]
+//             arr[i] = arr[j]
+//             arr[j] = temp;
+
+//         }
+
+//     }
+// }
+// document.write("<h1>Descending  Order Array Element is : </h1>")
+// for(var i=0; i<arr.length; i++){
+    // document.write(arr[i] + "&nbsp;&nbsp;")
+// }    -->
+
+// var choice = parseInt(prompt("Press + for Add\n Press - for Sub\n Press * for Multi\n Press / for Div\n  Press % for Modulus\n" ))
+// // var x;
+// // var y;
+// // switch(choice)
+// // {
+// //     case '+':{
+// //         x= parseInt(prompt("Enter the value of X"));
+// //         y= parseInt(prompt("Enter the value of Y"));
+// //         document.write("<h1>Addition is :"+(x+y)+"</h1>")
+// //     }
+// //     case '-':{
+// //         x= parseInt(prompt("Enter the value of X"));
+// //         y= parseInt(prompt("Enter the value of Y"));
+// //         document.write("<h1>Subtraction is :"+(x-y)+"</h1>")
+// //     }
+// //     case '*':{
+// //         x= parseInt(prompt("Enter the value of X"));
+// //         y= parseInt(prompt("Enter the value of Y"));
+// //         document.write("<h1>Multiplication is :"+(x*y)+"</h1>")
+// //     }
+// //     case '/':{
+// //         x= parseInt(prompt("Enter the value of X"));
+// //         y= parseInt(prompt("Enter the value of Y"));
+// //         document.write("<h1>Division is :"+(x/y)+"</h1>")
+// //     }
+// //     case '%':{
+// //         x= parseInt(prompt("Enter the value of X"));
+// //         y= parseInt(prompt("Enter the value of Y"));
+// //         document.write("<h1>Modulus is :"+(x%y)+"</h1>")
+// //     }
+  //   default:{
+    //     document.write("<h1>Invalid Any choice </h1>");
+     //}
+ //}
+//  Write a program to calculate sum of digits of a number of three digits number using ifelse
+let  num = (prompt("Enter the three digit number from user"));
+if(num.length===3){
+    let num1 = parseInt(num[0])
+    let num2 = parseInt(num[1])
+    let num3 = parseInt(num[2])
+    let sum = num1 + num2 + num3
+    document.write("Sum of three digit number id",sum)
+} else {
+    document.write("Please enter a valid 3 digit number")
+}
+var num =                                                                         
+
+
+</script>
+
+  

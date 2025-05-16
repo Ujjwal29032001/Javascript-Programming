@@ -1,0 +1,39 @@
+<!-- <html>
+    <head>
+        <title></title>
+        <script>
+            function show()
+            {
+                alert("Show called.....");
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="show()">Click here !</button>&nbsp;&nbsp;
+        <button ondblclick="show()">Click here !</button>&nbsp;&nbsp;
+    </body> -->
+===========================================
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function getdata(){
+            var a = document.getElementById('x');
+            var b = document.getElementById('y');
+
+            var z = parseInt(a.value) + parseInt(b.value)
+            console.log("Add is : "+z);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text" placeholder="Enter Value of x" id="x"/>
+        &nbsp;&nbsp;
+        <input type="text" placeholder="Enter value of y" id="y"/>
+        <br><br/>
+        <button onclick="getdata()">Send Data !</button>&nbsp;&nbsp;
+    </center>
+</body>
+</html>

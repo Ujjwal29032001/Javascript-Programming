@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./emp.js"></script>
+    </head>
+    <body onload="init()">
+          <div class="container">
+            <h1 style="color:red;text-align: center;text-shadow:2px 2px 2px blue">Enter Employee Data</h1>
+          </div>
+          <div class="row">
+            <div class="col-md-6 form-group">
+            <input type="text"class=form-control placeholder="Enter Employee Id" id="eid"/>
+          </div>
+            <div class="col-md-6 form-group">
+            <input type="text"class=form-control placeholder="Enter Employee Name" id="ename"/>
+          </div>
+        </div>
+        <div class="row">
+            <div class = "col-md-6 form-group">
+                <input type="text" class="form-control" placeholder="Enter Employee email " id="eemail"/>
+            </div>
+            <div class = "col-md-6 form-group">
+                <input type="text" class="form-control" placeholder="Enter Employee Contact " id="econtact"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <select id="edept" class="form-control">
+                    <option value="">Select Dept</option>
+                    <option value="Admin">Admin</option>
+                    <option value="MGR">MGR</option>
+                    <option value="HR">HR</option>
+                    <option value="Recp">Recp</option>
+                    <option value="Acco">Accounts</option>
+                </select>
+            </div>
+            <div class="col-md-6 form-group">
+                  <input type="text" class="form-control" placeholder="Enter Employee Salary" id="esalary"/>
+            </div>
+            </div>
+
+            <div class="row">
+            <div class="col-md-6 form-control">
+                <input type="button" class="btn btn-success form-control" value="Add Employee Data" onclick="addEmployee()"/>
+            </div>
+            <div class="col-md-6 form-control">
+                <input type="button" class="btn btn-danger form-control" value="Show Employee Data" onclick="showEmployee()"/>
+            </div>
+        </div>
+    </hr>
+    <h1 style="color:red; text-align:center; text-shadow:2px 2px 2px blue">
+        Show Employee Data
+    </h1>
+    <div class="table-responsive">
+        <table class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>Dept</th>
+                    <th>Salary</th>
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbdy"></tbody>
+        </table>
+    </div>
+        </div>
+    </body>
+    </html>

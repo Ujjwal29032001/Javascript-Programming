@@ -1,0 +1,51 @@
+<script>
+//     var std1 ={id:101,name:'Mahakaal',fees:10000,contact:'123456'};
+//     var std2 = {id:102,name:'Omkar',fees:15000,contact:'789456'};
+//     var std3 = {id:103,name:'Rameshwar',fees:12000,contact:'159723'};
+//     var std4 = {id:104,name:'pragaya',fees:10000,contact:'452302'};
+
+//  printDetails = function(city,state,country,continent,pincode){
+//      console.log(`${this.id} : ${this.name} : ${this.fees}: ${city} : ${state} :${country} : ${continent} : ${pincode}`);
+//  }
+//       printDetails.apply(std1,["Indore","MP","India","Asia"]);
+//       printDetails.apply(std2,["Indore","MP","India","Asia"]);
+//       printDetails.apply(std3,["Indore","MP","India","Asia"]);
+//       printDetails.apply(std4,["Chennai","TamilNadu","India","Asia","452010"])  
+
+// var std1 = {id:201,name:'lallu',fees:500,contact:'9755944199',pincode:'452010'};
+// var std2 = {id:202,name:'Kallu',fees:1200,contact:'98935425130',pincode:'204510'};
+// var std3 = {id:203,name:'Allu',fees:950,contact:'934036563',pincode:'102045'};
+// var std4 = {id:106,name:'Sallu',fees:4500,contact:'8815898833',pincode:'210540'};
+
+// printDetails = function(city,state,country,continent,pincode){
+//     console.log(`${this.id}:${this.name}:${this.fees}:${country}:${continent}:${city}:${state}:${this.pincode}:${this.contact}`);
+// }
+// let fun1 = printDetails.bind(std1,"Indore","MP","India","Asia");
+// console.log(typeof fun1);
+// console.log(fun1);
+// fun1()
+
+// let fun2 = printDetails.bind(std2,"Ujjain","Rajasthan","America","North America");
+// console.log(typeof fun2);
+// console.log(fun2);
+// fun2()
+
+// let fun3 = printDetails.bind(std3,"Rome","Lousiana","Italy","Europe");
+// console.log(typeof fun3);
+// console.log(fun3);
+// fun3() 
+// =============================================== 
+//calling function
+var std1 = {id:101,name:"ujjwal",fees:12300,contact:'123456789',
+             printDetails:function(){
+                console.log(`${this.id} : ${this.name} :${this.fees} : ${this.contact}`);
+             }
+}
+var std2 = {id:102,name:'Shivam',fees:200,contact:'4567213890'}
+var std3 = {id:103,name:'Tonna',fees:6400,contact:'784512963'}
+std1.printDetails()
+std1.printDetails.call(std2);
+std1.printDetails.call(std2);
+// ==============================================
+
+ </script>

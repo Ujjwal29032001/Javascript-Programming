@@ -1,0 +1,178 @@
+<script>
+/*    
+ syntax :
+  switch(variable) // variable: It may be String/Number
+  {  
+      case String/Number :
+        {
+           Statements...
+           break;
+      }
+           case String/Number :
+            {  
+              Statements...
+              break;
+           }
+           case String/Number :
+            {
+               Statements...
+               break;
+           }   
+           case  String/Number
+           {  
+               Statemets...
+               break;
+           }    
+               ---
+               ---
+               ---
+           default { 
+             Statements...
+             break;
+           }    
+  }  
+*/
+// switch(choice) 
+// {
+    // case 1:{
+        // document.write("<h1>Hello Students...</h1>");
+        // break;
+    // } 
+//     case 2:{
+//         document.write("<h1>Hii Students...</h1>");
+//         break;
+//     } 
+//     case 3: {
+//         document.write("<h1>Hii-Fii...</h1>");
+//         break;
+//     }
+//     case 4: {
+//         document.write("<h1>Bye Students...</h1>")
+//         break;
+//     }
+//     default:{
+//         document.write("<h1>Your Choice is Invalid...</h1>")
+//     }
+// }
+// document.write("<h1>After Switch-case invoked : </h1>")
+// var choice = parseInt(prompt("Press 1 for Hello Studenths\nPress 2 for Hi-fi\nPress 3 for Hii-Fii\nPress 4 for Bye"));    
+// switch(choice) {
+    // case 1:{
+        // document.write("<h1>Hello Students...</h1>");
+        // break;
+    // }
+    // case 2:{
+        // document.write("<h1>Hii Students....</h1>");
+        // break;
+    // }
+    // case 3:{
+        // document.write("<h1>Hii-Fii...</h1>");
+        // break;
+    // }
+    // case 4:{
+        // document.write("<h1>Bye Students...");
+        // break;    
+    // }
+    // default:{
+        // document.write("<h1>Your Choice is Invalid...</h1>")
+    // }
+// }
+// document.write("<h1>After switch case is invoked...")  
+// var choice = prompt("press A for Hello Students\npress B for Hii-Students\n Press C for HII-Fii Students\n Press D for Bye Students");
+// switch(choice) {
+    // case "A": {
+        // document.write("<h1>Hello Students...</h1>");
+        // break;
+    // }
+    // case "B": {
+        // document.write("<h1>Hii-Students....</h1>");
+        // break;
+    // }
+    // case "C": {
+        // document.write("<h1>HII-Fii Students.....</h1>");
+        // break;
+    // }
+    // case "D": {
+        // document.write("<h1>Bye students...<h1>");
+        // break;    
+    // }
+    // default:{
+        // document.write("<h1>Your Choice is invalid</h1>")
+    // }
+// }
+// document.write("<h1>After switch Case is invoked</h1>")   
+
+var choice = parseInt(prompt("Press 1 for Arithmetic\n Press 2 for ArmStrong \n Press 3 for factorial Numbers \n Press 4 for Table \n Press 5 for Prime Numbers "));
+document.write(choice);
+switch(choice) {
+    case 1:{
+        var x = parseInt(prompt("Enter value of X"));
+        var y = parseInt(prompt("Enter the value of Y"));
+
+        document.write("<h1> Add is : "+(x+y)+"</h1>");
+        document.write("<h1> Add is : "+(x-y)+"</h1>");
+        document.write("<h1> Add is : "+(x*y)+"</h1>");
+        document.write("<h1> Add is : "+(x/y).toFixed(3)+"</h1>");
+        document.write("<h1> Add is : "+(x%y)+"</h1>");
+        break;
+    }
+    case 2:{
+        var num = parseInt(prompt("Enter Any Value"))
+        var temp = num;
+        var sum = 0;
+        var rem;
+        while(num != 0) {
+            rem = num%10;
+            sum = sum + rem*rem*rem
+            num = parseInt(num/10);
+        }
+        if(temp == sum) {
+            document.write("<h1>Given num is armstrong</h1>")
+        }
+        else{
+            document.write("<h1>Given num is Not ArmStrong</h1>")
+        }
+        break;
+    }
+    case 3:{                                                  
+        var num = parseInt(prompt("Enter any Value to print Factorial"));
+        var f = 1;
+        for(i=1;i<=num;i++) {
+            f = f * i
+        }
+    }   document.write("<h1>Factorial is : "+f+"</h1>")
+        break;
+    case 4: {
+        var num = parseInt(prompt("Enter any value to print Table"));
+        var f = 1;
+        for(i=1; i<=10; i++)
+        document.write("<h1>"+num+"*"+i+"="+(num*i)+"</h1>");
+        break;
+    }
+    case 5: {
+        var num = parseInt(prompt("Enter any value to check given number is prime or not"));
+        var count = 0;
+        for(i=1; i<=num; i++) 
+          {
+            if(num%i==0){
+                count++;
+            }
+          }
+          if(count == 2)  {
+            document.write("<h1>Given number is Prime</h1>")
+          }
+          else {
+            document.write("<h1>Given Number is not prime</h1>")
+          }
+          break;
+    }
+    default: {
+        document.write("<h1>Your choice is invalid...</h1>")
+    }
+}   
+document.write("<H1>After switch case is invoked : </h1>");
+   
+ 
+
+
+</script>

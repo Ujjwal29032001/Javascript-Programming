@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If-else</title>
+    <script>
+        // Greatest number between two number
+    //    let x = parseInt(prompt("Enter any Value of X: ")) ;
+    //    let y = parseInt(prompt("Enter any Value of Y: ")) ;
+    //    if(x>y){
+        // document.write("<h1>X is greater: "+x+"<h1>")
+    //    }
+    //    else{
+        // document.write("<h1>Y is greater: "+y+"</h1>")  
+    //    }
+    //    document.write("Bye...")    
+
+    // Check Given Number is Odd or Even  
+
+    // let num = parseInt(prompt("Enter any Value to check given number is odd or even"));
+    // if(num%2==0){
+        // document.write("<h1>Given number is even:" +num+"</h1>")
+    // }
+    // else{
+        // document.write("<h1>Given number is odd: " +num+ "</h1>")
+    // }   
+
+    // Check Positive or Negative  using If-Else 
+    //    let num = parseInt(prompt("Enter the number")) 
+    //    if (num> 0){
+        // document.write("<h1>The Number is positive"+num+"<h1>")
+    //    }
+    //    else if (num < 0){
+        // document.write("<h1>The Number is negative"+num+"</h1>")
+    //    }
+    //    else{
+        // document.write("<h1>The Number is Zero"+num+"</h1>")
+    //    }
+        
+    //    Check Greatest number between three number
+        //   let x = parseInt(prompt("Enter any Value of X: "))
+        //   let y = parseInt(prompt("Enter any Value of Y: "))
+        //   let z = parseInt(prompt("Enter any Value of Z: "))
+          
+        //   if(x>y){
+            // document.write("<h1>X is Greater: "+x+"</h1>")
+        //   }
+        //   else if(z>x){
+            // document.write("<h1>Z is greater :"+z+"</h1>")
+        //   }
+        //   else if(y>z){
+            // document.write("<h1>Y is Greater : "+y+"</h1>")
+        //   }
+        //   else{
+            // document.write()
+        //   }   
+        // let year = parseInt(prompt("Enter a Year"))   
+        // if(year%4 ==0){  
+            // document.write("Leap year")   
+        // }  
+        // else if(year%100 == 0){    
+            // document.write("Leap year is not")
+
+        // }
+        // else if(year%400 == 0){
+            // document.write("Leap year")
+        // }
+        // else
+            // document.write("Not Leap year")
+        
+    var Year = parseInt(prompt("Enter a Year:"));
+    var isLeapYear = (Year % 4 == 0) ?  ((Year % 100 == 0) ? ((Year % 400 == 0) ? true : false) : true) : false; 
+    document.write(isLeapYear ? "Leap Year" : "Not a Leap Year"); 
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,229 @@
+//Class - data Memeber + Member Function 
+//class ClassName - class Name should be start from Uppercase 
+//class Opening symbol 
+//Function  
+<script>
+// class Addition{
+//     add(){
+//         var x =10;
+//         var y = 20;
+//         var z = x+y;
+//         console.log("Addition is :"+z)
+//     }
+// }
+// var obj = new Addition();
+// obj.add();
+
+// class Subtraction{
+//     Sub(){
+//         var a = 10;
+//         var b = 5;
+//         var c = a-b;
+//         console.log("Subtrcation is :"+c)
+//     }
+// }
+// var obj = new Subtraction();
+// obj.Sub();
+// // ========================================
+// class Demo{
+//     show(){
+//         console.log("Show called")
+//     }
+//     display(){
+//         console.log("Display Called")
+//     }
+// }  
+// var obj = new Demo()
+// obj.show()
+// obj.display()
+// =================================================== 
+//class Addition{
+  //  getData(){
+    //    this.x=10;
+      //  this.y=20;
+    //}
+    //add(){
+      //  this.z = this.x + this.y
+    //}
+    //display(){
+      //  console.log("Value of x is : "+this.x);
+       // console.log("Value of Y is : "+this.y);
+        //console.log("Value of Z is :  "+this.z);
+    //}
+//}
+//var obj = new Addition();
+//obj.getData()
+//obj.add();
+//obj.display();
+// ==========================================================
+// class Addition{
+//     constructor(){
+//         this.x=10;
+//         this.y=40;
+//         console.log(this.x+":"+this.y);
+//     }
+//     add(){
+//         this.z = this.x + this.y;
+//     }
+//     display(){
+//         console.log("Value of x is :"+this.x);
+//         console.log("Value of y is :"+this.y);
+//         console.log("Value of z is :"+this.z);
+//     }
+// }
+// var obj = new Addition();
+// ================================================
+// class Addition{
+//      constructor(){
+//         this.x=10;
+//         this.y=40;
+//         // this.add();
+//         console.log(this.x+":"+this.y)
+//      }
+//      add(){
+//         this.z = this.x + this.y
+//      }
+//      display(){
+//         console.log("Value of x is :"+this.x);
+//         console.log("Value of y is :"+this.y);
+//         console.log("Value of z is :"+this.z);
+//      }
+// }
+// var obj = new Addition();
+//constructor automatically executes when we create the object of a class 
+//We create the constructor using the constructor keyword before constructor name 
+//We cannot use any function prototype or keyword. There are two types of constructor 
+//1)Default constructor 2) Parametrized constructor 
+//It is used to intialize the data member of our class   
+
+//=============================================================
+// class Addition{
+//   constructor(){
+//     this.x = 10;
+//     this.y = 20;
+//     console.log(this.x+":"+this.y);
+//   }
+//   add(){
+//     this.z = this.x + this.y;
+//   }
+//   display(){
+//     console.log("Value of x is : "+this.x);
+//     console.log("Value of y is : "+this.y);
+//     console.log("Value of z is : "+this.z);
+//   }
+// }
+// var obj = new Addition();  //Default Constructor : Object Create then call Constructor
+// obj.add();
+// obj.display();
+//This Keyword reprsent current class Object data
+// ===========================================================
+//Parameterized constructor
+// class Addition{
+//   constructor(x,y){
+//     this.x = x;
+//     this.y = y;
+//     console.log(this.x+":"+this.y)
+//   }
+//   add(){
+//      this.z = this.x + this.y  
+//   }
+//   display(){
+//     console.log("Value of x is :"+this.x);
+//     console.log("Value of Y is : "+this.y);
+//     console.log("Value of Z  is :"+this.z);
+//   }
+// }
+// var obj = new Addition(11,22) //Parametrized Object = objct Create then Call Parameterized Constructor
+// obj.add();
+// obj.display();
+//===========================================
+//Inheritance topic Oops
+// class A{
+//   show(){
+//     console.log("Show Called...")
+//   }
+// }
+// class B extends A{
+//   display(){
+//      console.log("Display Called")
+//   }
+// }
+// var obj = new A(); //parent Class Object
+// obj.show();
+// // obj.display();
+
+
+// var obj = new B(); //Child Class Object
+// obj.show();
+// obj.display();
+
+//here Extends Keyword represent Inheritance
+//Note : Child Class Object can call parent class method or Behaviour 
+  //     parent Class Object cannot call child class method call only parent class Method
+//==========================================================
+// class A{
+//   constructor(){
+//     console.log("A Class Constructor Called")
+//   }
+//   show(){
+//     console.log("Show Called")
+//   }
+// }
+// class B extends A{
+//   constructor(){
+//     super();
+//     console.log("B Class Constructor Called...");
+//   }
+//   display(){
+//     console.log("Display Called...")
+//   }
+// }
+// var obj = new B(); //Child Class Object
+// obj.show();
+// obj.display();
+
+// Here extends keywords represent Inheritance 
+//   Note : Child Class Object can call parent class Method or behaviour
+//        : Parent Class Object Cannot call child class method call only parent class method.
+// ========================================= 
+class Company{
+  getCompany(cid,cname){
+    this.cid= cid;
+    this.cname=cname;
+  }
+  showCompany(){
+    console.log("Company Id is :"+this.cid);
+    console.log("Company Name:"+this.cname);
+  }
+
+}
+class Department extends Company{
+  getDepartment(did,dname){
+    this.did = did;
+    this.dname = dname;
+  }
+  showDepartment(){
+    console.log("Department Id is :"+this.did);
+    console.log("Department Name is:"+this.cname);
+  }
+}
+class Employee extends Department{
+  getEmployee(eid,ename,esal){
+    this.eid = eid;
+    this.ename = ename;
+    this.esal = esal;
+  }
+  showEmployee(){
+    console.log("Employee Id is :"+this.eid);
+    console.log("Employee Name is:"+this.ename);
+    console.log("Employee Salary is:"+this.esal);
+  }
+}
+var emp = new Employee();
+emp.getCompany(1, 'ABCD');
+emp.getDepartment(101,'ABCD');
+emp.getEmployee(102,'Ujjwal',123456);
+emp.showCompany();
+emp.showDepartment();
+emp.showEmployee();
+</script>

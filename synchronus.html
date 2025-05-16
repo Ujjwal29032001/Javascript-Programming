@@ -1,0 +1,88 @@
+
+    // Sync Function & Async Function
+Sync is stands For Synchronus function also known as blocking function
+Async is stands for Asynchronus also known as unblocking Non-blocking
+Funxtion    
+return hamesha caller pe jata hai 
+callback is asynchronus element.
+Synchronous or blocking functions & asynchronus or non-blocking functions
+It is function classification on the basis of function working approach
+ synchronus or blocking functions : those function which on self execution
+will block further code from execution , till complete execution are blocking or synchronus function
+Asynchronus or Non Blocking functions : Those function which on self executionwill not block further code from execution are non-blocking or asynchronus function.
+In other words:-
+Synchronus(Blocking) or Asynchronus (Non-blocking) functions:-
+Note: on basis of function execution behaviour function is classified as
+above Synchronus (Blocking)function : function which when executed will restrict
+further application from execution
+// ===============================================================================
+// Asynchronus (Non-Blocking) function : Function which when executed will not restrict further application for executionAll function follow this approach of execution
+Synchronus or blocking, but a function can be non-blocking or async in nature as per requiremets 
+// note: usualyy callback function are async
+<script>
+    // 1millisecond = 1second
+// Sync Function    
+// console.log("Before Function Invoked :");
+// function show(){
+//     console.log("Show Function Invoked...")
+// }
+// show();  sync calling
+// console.log("After Function Invoked") 
+// ============================================== 
+// This set Timeout
+// console.log("Before function invoked :");
+// function show(){
+//     console.log("Show Function invoked :");
+// }                                        //   simple async function
+// setTimeout(show, 3000);
+// console.log("After Function Invoked : ");
+// ============================================
+// console.log("Before Function Invoked : ");
+// function add(x,y){
+//     console.log("Add function invoked : "+(x+y));
+// }
+// add(11,23); //Sync Calling
+// setTimeout(()=>{                //Async Function using callback
+//     add(22,23)
+// },8000);
+// console.log("After Function Invoked")
+// ===============================================
+// This is setInterval
+// console.log("Before Function Invoked :");
+// function show(){
+//     console.log("Show Function Invoked : ");
+// }
+//  setTimeout(show, 2000);
+//  setInterval(show,2000);
+//  console.log("After Function Invoked : ");
+// ============================================== 
+// Callback using Async
+// console.log("Before function Invoked...");
+// var fun = (obj)=>{
+//     console.log("Fun function Invoked...");
+// //obj (); //Sync Calling
+// setTimeout(obj,3000);
+// console.log("fun======> FUnction Invoked...")
+// }
+// fun(()=>{
+//     console.log("Call back Function Invoked...")
+// })
+// console.log("After Function Invoked...")
+// ===============================================
+//Addition of two number using callback Async function
+//& return value.
+//Factorial of two number using callback Async function
+//& return value.
+// console.log("Before Function Invoked...");
+// var add = (x,y)=>{
+//     console.log("Addition function invoked :"+(x+y));
+//     setTimeout(obj,2000)
+//     console.log("fun=======> function Invoked")
+// }
+// fun((obj)=>{
+//     console.log("Call back function invoked")
+// })
+// console.log("Afetr Function Invoked")
+// =================================================
+// check even or odd using callback async function & return value
+</script>

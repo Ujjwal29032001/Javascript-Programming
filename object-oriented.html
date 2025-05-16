@@ -1,0 +1,72 @@
+It is collection of objects.
+2 It is also known as user-defined data type
+object - It is real-World entity Entity means Existence;
+It is responsible for Memory allocation of all data Which are present 
+in a class 
+Data=> Data Memeber or variable 
+Member Function or Function 1)Identify object,Requirements,feature,class 
+object class 
+person Human
+potato Veg
+Mango Fruits Object is identify by its class
+object oriented all those languages which adopt the concept of oops is called
+<script>
+    //Class = data Member + Memeber Function
+    class Demo{    //class ClassName : class Name start Should be Upper case
+        show(){    // class Opening Symbol , function name
+            console.log("Show called") //class ClassName
+        }
+        display(){
+            console.log("Display Called....")
+        }
+    }  //class Closing Symbol
+
+    var obj = new Demo()  //Keyword objectName = object Create krne wala new keyword kiskaObjectcreate Krna()
+        obj.show();   //calling. objectName.funName()
+        obj.display();
+    
+    // obj : It is a object 
+    //       obj name is user define 
+    //       It is responsible for memory  allocation of all data which are present in class
+class Additon{
+    getData(){
+        this.x =10;
+        this.y = 40;
+    }
+    add(){
+        this.z = this.x+this.y;
+    }
+    display(){
+        console.log("Value of x is :"+this.x);
+        console.log("Value of yis :"+this.y)
+        console.log("Value of z is"+this.z);
+    }
+}
+var obj = new Addition();
+obj.getData();
+obj.add();
+ obj.display(); //is keyword reprsent current class object 
+
+///constructor automatically executes when we create the object of class.
+// We create the constructor using constructor keyword before constructor name we cannot use any function prototype or keyword .There are two typees of constructor 1) Default constructor 2)b parameterized constructor
+// It is used to intialize the data member of our class.
+class Addition{
+    constructor(){
+        this.x = 10;
+        this.y = 40;
+        console.log(this.x+":"+this.y); //implicit code
+    }
+    add(){
+        this.z = this.x+this.y;
+    }
+
+display(){
+    console.log("Value of x is :"+this.x);//explicit ode
+    console.log("Value of y s :"+this.y)
+    console.log("Value of z s :"+this.z)
+}
+}
+var obj = new Addition();
+// ================================================
+Abstraction:- 
+</script>

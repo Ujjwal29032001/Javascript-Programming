@@ -1,0 +1,83 @@
+A callback is a function passed as an argument to another function
+A Callback function can run after another function has finished.
+This technique allow a function to call another function.
+Functions are block of code Which will be inoked when it is called as per requirements
+function can Accept data(arguments) and can give data(return type).
+It is possible that function in execution response may call another function, it 
+is called as callback function.
+<script>
+var fun = (obj)=>{
+    console.log("fun invoked : ");
+    console.log( typeof obj);
+    if(typeof obj == "function"){
+        obj(); //callback => Call another function
+    }
+    else{
+        console.log("Obj : "+obj);
+    }
+}   
+var fun1 = ()=>{
+    console.log("fun-1 Invoked :")
+} 
+// fun(fun1);  //Passing argument as a function
+fun(100);
+
+// fat arrow function
+// function argument agar arrow function hai us arrow function ke synatx ko hum 
+// or ko hum fat arow kahenge
+// =================================================================
+// var fun = (obj)=>{ //obj = function(){} , obj = ()=>{}
+
+//     console.log("fun invoked")
+//     obj();
+// }
+// fun(function(){
+//     console.log("Callback Function Invoked...")
+// });
+// fun(()=>{
+//     console.log("Arrow: Callback Function Invoked")
+// })
+// // ================================================
+// var fun = (obj)=>{  //obj = (data)=>{} => obj(Mahi)
+//     obj('Mahi'); //call back as arguments
+//     var x = 10
+//     obj(x); //call by value
+// }
+// fun((data)=>{
+//     console.log("Arrow : Callback Function Invoked :"+data);
+// })
+// =============================================================
+// var fun = (add)=>{
+//     obj('add'); 
+//     var x = 10
+//     var y = 20
+//     add(x,y);
+// }
+// fun((x,y)=>{
+//     console.log("Addition is :"+(x+y));
+// })
+// Synchronous & Asynchronus Programming and promise
+// ====================================================================
+// Find the Addition Any given Number using return Function
+// var add = (x,y,obj)=>{
+    // var z = x+y;
+    // obj(z);
+// }
+// add(11,22,(res)=>{
+    // console.log("Addition is :"+res);
+// })
+// Find the Factorial Any given Number using return function
+// var fact = (num,obj)=>{  //x = 11, y = 22 obj =(data)=>{}=>obj(Mahi)
+//     var f = 1;
+//     for(var i=1; i<=num; i++){
+//         f = f * i
+//     }
+//     obj(f);
+// }
+// var num = parseInt(prompt("Enter Any Number"))
+// fact(n,(res)=>{
+//     console.log("Factorial is :"+res)
+// })
+// ===================================================
+
+</script>    

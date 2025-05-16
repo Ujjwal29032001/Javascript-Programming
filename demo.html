@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic javascript</title>
+    <script>
+      // console.log("Hello Students Welcome to js Environment")
+      // document.write("Hello Students Welcome to Js Environment")
+
+      // document.write("<br/>");
+      // document.write("Hello Students Welcome to Js Environment")   
+
+      // document.write("<h1>Hello Student Welcone To Js Environment</h1>")
+      // document.write("<h1 style='color: red'>Hello students Welcome to Js Environment</h1>")
+      // document.write("<h1 style='background:Yellow;color: red'>Hello students Welcome to Js Environment</h1>")
+      // document.write("<h1 style='background:yellow;color:red; text-align:center'>Hello students Welcome to Js Environment</h1>")
+      //  data = prompt("Enter any Value");
+      // document.write(data);
+      // document.write("<br/>");
+      // document.write(typeof data);
+      // document.write("<hr/>")
+
+      // Convert String into Number
+      // num = parseInt(data);
+      // document.write(num);
+      // document.write("<br/>")
+      // document.write(typeof num);
+      // document.write("<hr/>")   
+
+      // num = data*1;
+      // document.write(num);
+      // document.write("<br/>");
+      // document.write(typeof data)  
+
+      // Addition of two variables 
+      //  x= 10;
+      //  y= 20;
+      //  z = x+y; //here z is resultant value
+                  //Resultant variable: It can be hold the result value or returned value 
+// ================================================================== 
+                  
+
+// function SI(p,r,t){
+    
+//     var si = p*r*t/100
+//     document.write("The Simple Interest is :",si)
+
+// }
+// SI(1000,5,2)
+// ===========================================================
+// You have a array of daily sales figure for a store:
+// sales = [150,200,120,300,250,180,220]
+// Use a Loop to find the Highest and lowest sales in the array. 
+// Calculate the average daily sales. 
+// Print the sales figure that are above the average
+// var sales = [150,200,120,300,250,180,200] 
+// var totalsales = 0;
+// for(var i=0;i<sales.length;i++){
+//     totalsales = totalsales + sales[i]
+// }
+// var averagesales = totalsales / sales.length
+// document.write("The avargae Daily sales is :"+averagesales);
+// ============================================================== 
+// var sales = [150,200,120,300,250,180,220]
+// var totalsales = 0;
+// for(var i=0;i<sales.length;i++){
+//     totalsales = totalsales + sales[i]
+// }
+// var averagesales = totalsales / sales.length;
+// document.write("The average Daily sales is :"+averagesales+"<br>");
+// document.write("Sales figure above the Average :")
+
+// for(var i=0; i<sales.length; i++){
+//     if(sales[i] > averagesales){  // Removed the incorrect semicolon here
+//         document.write(sales[i]+"<br>") // Added <br> for better readability
+    
+//     }
+    
+// }
+// ====================================================================
+//var arr = [150,200,120,300,250,180,200]
+//var highestsales = sales[0]
+//var lowestsales  = sales[0]
+//for(var i=0; i<sales.length; i++){
+  //  totalsales = totalsales + sales[i];
+    //if(sales[i] > highestsales){
+      //  highestsales = sales[i]
+    //}
+    //if(sales[i] < lowestsales){
+    //    lowestsales = sales[i]
+  //  }
+//}
+// =============================================
+//3) A user has a array of daily temperatures recorderd over a week and you need to calculate
+//the average  temperature for the week. The temperature are stored in the array.
+// var temp = [10,15,41,26,23,17,10];
+// var temperature = 0
+// for(var i=0; i<temp.length;i++){
+//     temperature = temperature + temp[i]
+// }
+// var climate = temperature / temp.length;
+// document.write("The average temperature for the week :"+climate);
+// ===================================================================== 
+//Write a function that selects a data storage plan based on user input.The plan as follows
+//"Free" for 5gb of storage 
+//"pro" for 50gb of storage at $10/month. 
+//"Enterprise" for unlimited storage at $30/month.
+//The function should return the storage capacity and monthly cost based on the selected plan
+// you are managing a library system represented as a array of objects.a
+// books = [{
+//               title:"Book A", author:"Author 1",copies :5,price:10.0 
+// },
+// {
+// title:"Book B",author:"Author 2",copies:2,price:15.0
+// }
+// ]
+// Write a function to calculate the total value of all books in the library. 
+// Find and print the title of the bookwith the fewest copies  
+
+//let books = [
+  //{ title: "Book A", author: "Author 1", copies: 5, price: 10.0 },
+  //{ title: "Book B", author: "Author 2", copies: 2, price: 15.0 }
+//];
+//function totallibraryValue(books){
+  //let totalValue = 0;
+  //let minCopiesBook = books[0];
+//for(let book of books) {
+  //totalvalue = totalvalue + bookcopies * bookprice;
+  //if(bookcopies <minCopiesBook.copies) {
+   // minCopies = book;
+ // }
+//}
+//console.log("Total Value of all books :",totalvalue)
+//console.log("Book with the fewest copies :",MinBookCopies.title)
+//}
+//totalLibraryValue(books);
+//============================================================= 
+//Find the first two maximum and two minimum elements from given array
+// let arr = [10,20,4,45,99,6,78,10,4];
+// //Intialize min1 and min2 with first two elements
+// let min1 = [0], min2 =[1] 
+// if(min2 < min1) {
+//   let temp = min1;
+//   min1 = min2 
+//   min2 = temp;
+// }
+// let max1 = [0] , max2 = [1]
+// if(max2 > max1) {
+//   let temp = max1;
+//   max1 = max2;
+//   max2 = temp;
+// }
+// for(let i=2; i<arr.length; i++){
+//    let num = arr[i]
+// }
+// if(num < min1) {
+//   min2 = min1;
+//   min1 = num;
+// }else if(num < min2 && num!== min1){
+//     min2 = num;
+// }
+// if(num > max1){
+//     max2 = max1;
+//     max1 = num;
+// } else if(num > max2 && num !== max1) {
+//   max2 = num;
+// }
+// document.write("First Mininmum:",min1);
+// document.write("Second Minimum :",min2);
+// document.write("First maximum :",max1);
+// document.write("Second Maximum :",max2);
+// ==================================================
+//
+// function getStoragePlan(plan){
+//  let storage = "" , Cost="";
+//  if(plan == "Free") {
+//     storage = "5GB";
+//     Cost = "$0/month";
+//  }
+//  else if(plan =="Pro" ) {
+//     storage = "50GB";
+//     Cost = "$10/month";
+//  }
+//  else if(plan == "Enterprise"){
+//     storage = "Unlimited";
+//     Cost = "$30/month";
+//  }
+//  else{
+//     storage = "Invalid Plan";
+//     Cost = "N/A";
+//  }
+//     return{storage,Cost}; //Returning an object
+// }
+// let plan = getStoragePlan("Pro");
+// //print the result
+// console.log(`Storage: ${plan.storage}, Cost: ${plan.Cost}`);
+//===================================================================
+// function abc(){
+//   console.log("abc.xyz");
+// }
+// abc()
+// abc.xyz=400
+// abc.xyz=200
+// abc()
+//==================================================
+// const numbers = [1,2,3,4]
+// numbers[100] = 500
+// console.log(numbers);
+// ====================================================
+// const arr = [...'Praveen']
+// console.log(arr);
+// ====================================
+// console.log(parseInt('10+2'));
+// console.log(parseInt('7FM'));
+// console.log(parseInt('M7F'));
+//=============================================
+// console.log([1,2].map(num=>{
+//   if(num>0) return ;
+//   return num*2;
+// }))
+// // ====================
+// function abc(){
+//   return;
+// }
+// console.log(abc());
+// ======================================
+//write a program to add two matrices
+// function addMatrices(a,b){
+//   let result = [];
+//   for(let i=0;i<a.length;i++) {
+//     result[i] = [];
+//     for (let j=0; j<a[0].length;j++) {
+//       result[i][j] = a[i][j] + b[i][j]
+//     }
+//   }
+//   return result;
+// }
+// let matrices1 = [
+//   [1,2,3],
+//   [4,5,6]
+// ];
+// let matrices2 = [
+//   [7,8,9],
+//   [10,11,12]
+// ];
+// console.log(addMatrices(matrices1,matrices2));
+// ==============================================
+// function cube() {
+//   var r = parseInt(prompt("Enter the number"))
+//   var result = r*r*r;
+//   document.write("The cube is :"+result);
+// }
+// cube();
+// ===============================================
+//Write a program to check the prime number using function with argument and no return type.
+// function prime() {
+//   var num = parseInt(prompt("Enter Any Number"));
+  
+// }var count = 0;
+// var i = 1  // Intialize the loop Counter
+// while(i<=num){
+//    if(num%i == 0) { // Loop runs until i<=num 
+//       count++  // Increment count if i is a divisior
+//    }
+//    i++ // Increment
+// }
+// if(count == 2) {  // Prime number has two divisior one and itself
+//     document.write("<h1>Given number is a prime</h1>")
+// }
+// else{
+//    document.write("<h1>Given number is not prime</h1>")
+// }
+// prime()
+// //     </script>
+//  </head>
+//  <body>
+    
+// // </body>
+// // </html>
+// // //===============================================================
+<!-- // what is the different between splice and slice give example;
+// slice :the slice method is used to create the copy of an array or string without changing the original array
+// var arr = [10,20,30,40,50,60] 
+// let slicearr = arr.slice(1,5)
+// console.log(slicearr)
+// output = 20,30,40,50
+// If the start index is greater than the end index, the method returns an empty array or string.
+// If end is not provided, it slices to the end of the array or string.
+// Negative indices count from the end of the array or string, e.g., -1 refers to the last element.
+// The slice method start from indexing 1 second element and and extract at index 4
+// but not including index 4.
+
+// splice:The splice method is used to add remove or replaced the original array.
+// Splice modifies the original array and returns the array of removed elements
+// let arr=[10,20,30,40,50] 
+// let remove =arr.splice(1,2)
+// console.log(arr)
+// console.log(remove);
+// <!-- ================================================================ -->
+<!-- //  what is difference call bind apply ? Explain with the program.
+//  call method in javascript is used to invoke  function with specifies this .value
+//  It is built in method for function borrwing argument sprovide individually
+//  function greet(){
+//   console.log(`Hello,${this.name}`)
+<!-- //  } -->
+<!-- // let user = {name.alice} 
+// greet.call(user);
+// Apply method : the apply method in javascript we use to invoke a function with specified this. value 
+// and the argument passed as an array. 
+// example=function greet(greeting) {
+//   console.log(greeting+","+this.name)
+// }
+// let user = {name:alice} 
+// greet.apply(person,["Hi"]);
+// bind method = The bind method in javascript is used to create a new function with specified this value and optionally 
+// preset arguments. bind() does not executive function immediately but returns the new function
+// let person = name{
+//   user: Lallulal -->
+// }
+<!-- // function greet(greetings) {
+//   console.log(greeting+","+this.name)
+// } --> -->
+<!-- // let boundgreet = greet.bind(person,"hello")
+// boundgreet(); --> -->
+// <!-- ===================================================== -->
+<!-- //  IIFE Imediately Invoked Function expression it is a javascript function that executes immediately as it is defined.
+//  (function () {
+//    console.log("Thi is an IIFE")
+//  })
+//  Wrapped n parethesis()
+//  immediately Invoked()
+//  //IIFE= Imediaility Invoked Function Expression 
+//  // //()();
+//  // //First(); => Defination
+//  // //Second(); => Calling  
+//  // // Mostly Use  in DB Connectivity Data fetching
+//  // (function show(){
+//  //     console.log("Show Called...");
+//  // })(); -->
+<!--  
+//  // (()=>{
+//  //     console.log("Ärrow Function Invoked : ");
+//  // })();
+ 
+//  // ((name)=>{
+//  //     console.log("Name is : "+name)
+//  // })("Mahi");
+ 
+//  // ((x,y)=>{
+//  //     console.log("Add is : "+(x+y));
+//  // })(10,22)
+ 
+//  // (()=>{
+//  //     let name='Chintu'
+//  //     console.log(`name is : ${name}`);
+//  // })(); -->
+ <!-- ======================================================= -->
+  <!-- <script>
+  //Using object literal(Most common) 
+ let obj1 = {
+  name: 'UJJWAL',
+  age: 24
+ };
+ console.log(obj1);
+//  ==========================================
+//Using new Object()
+let obj2 = new object()
+obj2.name="Shivam"
+obj2.age=24;
+console.log(obj2);
+// ==========================================
+//Using a Constructor Function
+function person(name,age) {
+  this.name = name;
+  this.age = age;
+}
+let obj3 = new person("SHINJU",25);
+console.log(obj3);
+// ===========================================
+// Using ES6 Class
+class Car {
+  constructor(brand,model) {
+    this.brand = brand;
+    this.model = model;
+  } 
+}
+let obj8 = new Car("Tesla","Model X")
+console.log(obj6);
+// ============================================
+//Using object.create()
+let proto = {greet : "Hello"};
+let obj4 = Object.create(proto)
+obj4.name = "Kushwaha"
+console.log(obj4);
+// ================================================
+//Using Factory function
+function createperson(name,age) {
+  return(name,age);
+}
+let obj6 = createperson("Mahhakal" ,"5000")
+console.log(obj6);
+// =================================================
+// Using JSON parse() 
+let obj9 = JSON.parse({"name":"Kalii","age":"87"})
+console.log(obj9);
+</script>   -->
+<!-- =============================================================================== -->
+<!-- <script>
+var arr = [11,22,33,44,55] 
+var arr1 = []
+
+for(var i=arr.length-1; i>=0; i--){
+  arr1.push (arr[i])
+  }
+  
+  for(var ar of arr1){
+  document.write(ar+'<br/>');
+    
+} -->
+//--------------------------------------------------
+<!-- //write a javascript function to check the if a given string is plaindrome
+// ========================================== -->
+<script>
+//Remove the duplicate elements from given array
+// const numbers = [1,2,3,4,4,4,5,6,6,7]
+// const names = ["UJJWAL","SHIVAM","UJJWAL","KRISHNA","SHINU","SHIVAM"]
+// const uniqueNumbers = [...new Set(numbers)];
+// document.write(uniqueNumbers);
+// const uniqueNames = [...new Set(names)]
+// document.write(uniqueNames);
+// ==============================================
+// console.log(1 + "1");
+// 1 is a number.
+// "1" is a string.
+// When using the + operator, if one operand is a string, JavaScript converts the other operand to a string and concatenates them.
+// So:
+// javascript
+// Copy
+// Edit
+// 1 + "1"  => "1" + "1"  => "11"
+// ✅ Output:
+
+// Copy
+// Edit
+// 11
+// console.log(1 - "1");
+// 1 is a number.
+// "1" is a string, but when using -, JavaScript tries to convert the string to a number.
+// "1" becomes 1, so:
+// javascript
+// Copy
+// Edit
+// 1 - 1  => 0
+// ✅ Output:
+
+// Copy
+// Edit
+// 0
+// ==================================================
+//what are closures explain them?
+// closures means nesting functions
+// closures are required data+ function 
+// and it is a top level entity and need two parameter
+// required data is also known as lexical scope or surrounding state.when we binded the function with required data it is created the top level entity and thats why we called it closure closure created the nested syntax.Copy
+// function outer(){
+//   var name = "Mahi";
+//   function inner(){
+//     console.log("Inner :"+name)
+//   }
+//   inner()
+//   console.log("Outer :"+name);
+// }
+// outer();
+// =======================================
+//what is promise and async await explain with example ?
+// In JavaScript, a Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+// Why Use Promises?
+// When performing asynchronous tasks (like fetching data from an API), JavaScript does not wait for the task to finish before moving on. Promises allow you to handle these tasks effectively by providing a way to execute code after an operation has completed or failed.
+
+// Promise States
+// A Promise can be in one of the following states:
+
+// Pending: Initial state, before the operation completes.
+// Fulfilled: Operation completed successfully, returning a result.
+// Rejected: Operation failed, returning an error.
+// Handling Promises:
+// You can handle promises using .then(), .catch(), and .finally():
+
+// .then() – Executes when the promise is fulfilled.
+// .catch() – Executes when the promise is rejected.
+// .finally() – Executes after either fulfillment or rejection.
+
+// What is async await with example ?
+// =================================================
+// what is == and === in the js
+//Write a javascript function to Check given string is plaindrome ?
+// let str = "madam"; // Predfined input string
+// let original = str.Lowercase();
+// let length = original.length;
+// let isPalindrome = true;
+
+// //Loop to compare Character  from start to end;
+// for(let i=0; i<length/2; i++){
+//   if(original[i] !== original[length-1-i]) {
+//     isPalindorme = false;
+//     break;
+//   }
+// }
+// // Check result
+// if (isPalindrome) {
+//   console.log(`${str} is a palindrome.`);
+// } else {
+//   console.log(`${str} is not a palindrome.`);
+// }
+// ==========================================================
+// how do you find max and min and secondlargest value in array without using any predfine method.
+var arr = [11,22,16,18,48,45,20,23]
+var max = arr[0] //max = 0
+var min = arr[0] //min = 0
+for(var i=0; i<arr.length; i++){
+  document.write(arr[i] + "&nbsp;&nbsp;");
+  if(max<arr[i]){
+    max=arr[i];
+  }
+  if(min>arr[i]){
+    min=arr[i]
+  }
+}
+document.write("<h1>Maximum Array element is :"+max+"</h1>")
+document.write("<h1>Minimum Array Element is : "+min+"</h1>")
+</script>

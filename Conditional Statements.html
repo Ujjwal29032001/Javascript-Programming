@@ -1,0 +1,512 @@
+<script>
+// var i = 1; //intaialization
+// while(i<=10){
+//   document.write("<h1>Hello World....</h1>")  //statements
+//   i++; // Value increase from 1 (by default) i++ => i = i+1 Increment operatoror
+// } //condition
+// document.write("Bye...")
+
+   // for loop
+   // for(var i=1; i<=10; i++ ){
+   //    document.write("<h1>"+i+"</h1>");
+   // }
+
+// Print odd  Numbers  While loop
+// var i = 0;
+// while(i<=100){
+   // if(i%2==1){
+      // document.write("<h1>"+i+"</h1>")
+   // }
+   // i++;
+// }
+// document.write("Bye...")
+// print odd number using for loop
+
+// for(i=0;  i<100; i++) {  
+   // if(i%2==1){ 
+      // document.write("<h1>"+i+"</h1>")  
+   // }
+// }
+   
+// document.write("Bye...")  
+
+//  Sum of n natural numbers upto n numbers 
+/*
+num = 10 => 1+2+3+4+5+6+7+8+9+10 = 55
+sum = 0
+0+1 = 1
+1+2 = 3
+3+3 = 6
+6+4 = 10
+10+5 = 15
+15+6 = 21
+21+7 = 28
+28+8 = 36
+36+9 = 45
+45+10 = 55
+*/ //While loop sum of N natural Numbers
+//var num = parseInt(prompt("Enter Any Number"))
+//var i = 1;
+//var sum = 0;
+//while(i<=num){
+  // document.write("<b>Value of i: " + i+"<b/><br/>");
+  // sum =sum + i;
+  // i++;
+//}
+//document.write("<h1>Sum of N natural numbers : "+sum+"<h1/>")   
+    
+//for loop  
+// var num = parseInt(prompt("Enter any number: "))
+// var sum = 0;
+// for(var i=1; i<=num; i++){ 
+   //  document.write("<b>Value of i :"+i+"</b><br/>");  
+   // sum = sum + i; 
+// }
+// document.write("<h1>Sum of N natural numbers :"+sum+"</h1>") ;   
+
+//While loop Using Sum Of Whole Numbers   
+//var num = parseInt(prompt("Enter any number"))
+//var i = 0;
+//var sum = 0; 
+//while(i<=num){
+  // document.write("<b>Value of i: "+i+"<b/><br/>")
+    //  sum =sum+i
+      //i++;
+//}
+//document.write("<h1>Sum of N Whole numbers :"+sum+"</h1>")   
+
+// for loop using Sum of Whole Numbers 
+//var num = parseInt(prompt("Enter any Number"))
+//var sum = 0;
+//for(var i=0; i<=num; i++){
+  // document.write("<b>Value 0f i: "+i+"</b></br>")
+  // sum = sum + i
+//}
+//document.write("<h1>Sum of N Whole numbers :"+sum+"</h1>")
+
+// Print the table using while loop  
+// var i,j;
+// var n = prompt("Enter the value of n");
+// i=1;
+// while(i<=10){
+   // j=n*i;
+   // document.write(n+"*"+i+"="+j);
+   // document.write("<br>");
+   // i++;
+// }
+// print the table using for loop
+// var n = prompt("Enter the value of n");
+// for(var i=1; i<=10; i++){
+   // j=n*i
+   // document.write(n+"*"+i+"="+j);
+   // document.write("<br>")
+// }   
+
+// print the factorial using for loop
+// let n = prompt("enter a number")
+// n=Number.parseInt(n)
+// let fact=1
+// for(let i=1; i<=n; i++)
+// {
+//    fact= fact*i
+//    document.write("factorial of "+n+"is "+fact)
+
+   
+// }
+
+// print the factorial using while Loop
+// let n = prompt("Enter the number")
+// n = Number.parseInt(n)
+// let i=1
+// let fact =1
+// while(i<=n){  
+//   
+   // fact=fact*i
+   // document.write("factorial of "+n+"is"+fact)
+   // i++;  
+// }  
+//  Check Given number is prime or not.Given
+//   1,2,3,5,7,9,11,13,19,31,etc..  
+//   prime numbers : Divide by 1 and itself  
+               //  : Divide by itself 
+/*               
+   num = 9 :
+   9%1 =>yes            
+   9%2 =>No            
+   9%3 =>yes            
+   9%4 =>No            
+   9%5 =>No            
+   9%6 =>No            
+   9%7 =>No            
+   9%8 =>No            
+   9%9 =>No            
+   9%1 =>yes      Not-prime
+=====================================
+num=11 :
+11%1 == 0 =>yes        
+11%2 == 0 =>No        
+11%3 == 0 =>No        
+11%4 == 0 =>No        
+11%5 == 0 =>No        
+11%6 == 0 =>No        
+11%7 == 0 =>No        
+11%8 == 0 =>No        
+11%9 == 0 =>No        
+11%10 == 0 =>No        
+11%11 == 0 =>yes        prime
+*/  
+// var num = parseInt(prompt("Enter any Number"))
+// var count = 0;
+
+// for(var i = 0; i<=num; i++){
+   // if(num%i==0){
+      // count++;
+   // }
+// }
+// if(count==2){
+   // document.write("<h1>Given num is prime : </h1>")
+// }
+// else{
+   // document.write("<h1>Given  num is not prime: </h1>")
+// }
+
+// Print the primenumbers using while loop 
+// var num = parseInt(prompt("Enter any number"));
+// var count = 0;
+// var i = 1  // Intialize the loop Counter
+// while(i<=num){
+//    if(num%i == 0) { // Loop runs until i<=num 
+//       count++  // Increment count if i is a divisior
+//    }
+//    i++ // Increment
+// }
+// if(count == 2) {  // Prime number has two divisior one and itself
+//     document.write("<h1>Given number is a prime</h1>")
+// }
+// else{
+//    document.write("<h1>Given number is not prime</h1>")
+// }
+
+// Print the input from the user and Sum it   
+
+// var num = parseInt(prompt("Enter the number"))
+//  var count = 0
+// // var i = 1;
+// for(i<1; i<=num; i++){
+//    var sum = i+i+i
+//     document.write(i+"+"+i+"+"+i+"="+sum + "<br")
+//     count++;
+// }
+// document.write("<h3>Total iterations: "+count+"</h3>")    
+
+// let sum = 0; // Initialize sum
+
+// Ask user how many numbers to input
+// let n = prompt("How many numbers do you want to sum?");
+
+// for (let i = 0; i < n; i++) {
+//   let num = Number(prompt("Enter a number:")); // Take input and convert to number
+//   sum += num; // Add to sum
+// }
+
+// document.write("The total sum is: " + sum); // Display the sum
+//  let n = prompt("Enter the value of n")
+//  n = Number.parseInt(n)
+//  let i= 10;  
+// do{  
+   // document.write(i) 
+   // i++  
+// }while(i<n){   
+   // document.write("The statement is false: ")  
+// }  
+//  let result = '';
+//  let i = 0;
+//  do{
+   // i = i+1   
+   // result =result + i;
+
+//  } while(i<5);  
+//  document.write(result);  
+
+// function sumofDigit(num) {
+   // let numStr= num.toString();
+   // let sum = 0;
+
+  //or (let digit of numStr) {
+    //sum += parseInt(digit)
+   //
+  //return sum;
+//
+ //document.write(sumoFDigit(738)) 
+
+// let num = parseInt(prompt("Enter any Number"));
+// let n = 1;
+// for(i<1; i<=10; i++) {
+//    let n = i+i+i+i+i+i+i+i+i+i 
+//    let n1 = i+i+i+i+i+i+i+i+i+i/10
+//    document.write
+//    document.write(i+"i"+i+"i"+i+"i"+i+"i"+i+"i"+i+"i"+i+"i"+i+"i"+i+"i"+i+"="+n1)
+// }
+//print the Codebetter 5 times
+// let i = 0;
+// for(i<0; i<5; i++) {
+//    document.write("Codebetter","<br>")
+// }
+// 
+  
+
+
+
+
+// let sum = 0; // Initialize sum
+
+// for (let i = 1; i <= 10; i++) {
+//     let number = parseFloat(prompt("Enter number " + i + ":")); // Take input
+//     sum += number; // Add number to sum
+// }
+
+// let average = sum / 10; // Calculate average
+
+// alert("Sum: " + sum + "\nAverage: " + average); // Display result  
+
+// Sum of Digits from Given number
+//  var num = parseInt(prompt("Enter any number"));
+// var sum = 0;
+// document.write("<h1>Given number : "+num+"</h1>")
+// while(num != 0)
+// {
+   // rem = num % 10;
+   // sum = sum + rem;  
+   // num = parseInt(num/10)
+// }
+// document.write("<h1>Sum of Digits from Given number : "+sum+"</h1>")
+
+// Check Given Number is Armstrong or Not Without using any Loop (Only for 3 digit Number)
+//  var num = parseInt(prompt("Enter any value.."));
+//  var temp = num;
+
+//  document.write("<h1>Actual Number is : "+num+"</h1>");
+
+//  var last = num%10;
+//  var middle = parseInt(num/10)%10;
+//  var first = parseInt(num/100);
+
+//  var sum = first*first*first + middle*middle*middle + last*last*last;
+//  if(sum == temp)
+//  {
+   //  document.write("<h1>Given Number is ArmStrong : "+sum+"</h1>")
+//  } 
+//  else
+//  {
+   // document.write("<h1>Given Number is Not Armstrong :"+sum+"</h1>")
+//  }
+//  document.write("<h1><Bye... </h1>")
+
+// Find the greatest number between two variables
+//   var x = parseInt(prompt("Enter the value of X")); 
+//  var y = parseInt(prompt("Enter the value of y"));
+//   if(x>y){ 
+   //  document.write("<h1>X is Greater...</h1>");  
+//   }  
+//   else{  
+   // document.write("<h1>Y is greater...</h1>");   
+//   }   
+//   document.write("<h1>Bye...</h1>")   
+
+// Check Given Number is Even or Odd.  
+// var num = parseInt(prompt("Enter any Value..")) 
+// if(num%2==0) {  
+   // document.write("<h1>Given  Number is Even..")  
+// }  
+// else{  
+   // document.write("<h1>Given Number is Odd : </h1>");   
+// }  
+// document.write("<h1>Bye...</h1>")  
+
+// Check Given Number is Positive Or Negative 
+// var num = parseInt(prompt("Enter any Value.."));
+// if(num>0)
+// {
+   // document.write("<h1>Given Number is Positive..</h1>")
+// }
+// else{
+   // document.write("Given Number is Negative : </h1>")
+// }
+// document.write("<h1>Bye...</h1>")   
+
+// Check Given Number is Positive or Negative or equal to 0
+/* Conditions
+1.First Variable Greater
+2.Second Variable Greater
+3.Both are Equal
+Using Else-If
+*/ 
+// var x = parseInt(prompt("Enter the Value of X")); 
+// var y = parseInt(prompt("Enter the value of Y"));
+// if(x>y){ 
+   //  document.write("<h1>X is Greater...</h1>") 
+// }
+// else if(x==y){
+   // document.write("<h1>Both the variables Values are Equal....</h1>");
+// }
+// else{
+   // document.write("<h1>Y is Greater...</h1>")
+// }
+// document.write("<h1>Bye...</h1>")
+
+// Check Given Number is positive or Negative or equal to 0
+// var x = parseInt(prompt("Énter the value of X"));
+// var y = parseInt(prompt("Enter the value of Y"));
+// if(x>=y) {
+//    if(x==y){
+//       document.write("<h1>both are Equal...</h1>");
+//    }
+//    else{
+//       document.write("<h1>X is Greater....</h1>")
+//    }
+   
+// }
+// else {
+//    document.write("<h1>Y is greater..</h1>")
+// }
+// document.write("<h1>Bye...</h1>")
+
+// Check given number is positive or negative
+// var num = parseInt(prompt("Enter any Value"))
+// if(num>0) 
+// {
+   // if(num==0) 
+// {
+   // document.write("<h1>Given Number is zero</h1>"); 
+// }
+// else{ 
+   // document.write("<h1>Given number is Positive</h1>")  
+// }
+// }
+// else{  
+   // document.write("<h1>Given Number is Negative..</h1>")  
+// }  
+
+// Check given number is Positive or Negative
+// var num = parseInt(prompt("Enter Any Value")); 
+//  if(num>0) 
+//  {  
+   //  document.write("<h1>Given number is Positive</h1>");   
+//  }  
+//  else if(num==0)    
+//  {  
+   //  document.write("<h1>Given Number is Zero </h1>");    
+//  }  
+//  else{ 
+   //  document.write("<h1>Given number is Negative </h1>");    
+//  }   
+
+// Print  First 10 Numbers (1-10)
+// var i = 1;
+// while(i<=10)
+// {
+   // docuemnt.write("<h3>"+i+"</h3>")
+   // i++
+// }
+// document.write("<h1>Bye...</h1>")
+/*
+procedure :
+i = 1=====>1<=10====>true===>1 ====>i++
+i = 2=====>2<=10====>true===>2 ====>i++
+i = 3=====>3<=10====>true===>3 ====>i++
+
+Print the series of Even Number upto n Number
+*/ 
+// var num = parseInt(prompt("Enter Any Number")) 
+// var i = 1;
+// while(i<=num)
+// {
+   // if(i%2==0)
+// {
+   // document.write("<h3>"+i+"</h3>")
+// }
+// i++;
+// }
+// document.write("<h1>Bye...</h1>")  
+// print table of any given number 
+// var num = parseInt(prompt("Enter Any Number"))
+// var i =1;
+// while(i<=10)
+// {
+   // docuemnt.write("<h3>"+num+" * "+i+" = "+(num*i)+"</h3>");
+   // i++;
+// }
+// document.write("<h1>Bye...</h1>")
+
+// Find the factorial of any given Number  
+// var num = parseInt(prompt("Enter Any Number")); 
+// var f = 1;
+// var i = 1;
+// while(i<=num)
+// {
+   // f = f * i;  
+   // i++
+// }
+// document.write("<h1>Factorial is : "+f+"</h1>")  
+// document.write("<h1>Bye...</h1>")  
+/*
+i=1======>1<=5=====>true======>f = 1 * 1 = 1=====>i++
+i=2======>2<=5=====>true======>f = 1 * 2 = 2=====>i++
+i=3======>3<=5=====>true======>f = 2 * 3 = 6=====>i++
+i=4======>4<=5=====>true======>f = 6 * 4 = 24=====>i++
+i=5======>5<=5=====>true======>f = 24 * 5 = 120=====>i++
+
+Sum of Digits from Given Numner
+*/
+// var num = parseInt(prompt("Enter Any Number"));
+// var sum = 0;
+// document.write("<h3>Given number is : "+num+"</h3>");
+// while(num != 0)
+// {
+   // var rem = num%10;
+   // sum = sum +rem;
+   // num = parseInt(num/10);
+// }
+// document.write("<h1>Sum of Digits is :"+sum+"</h1>")
+// document.write("<h1>Bye...</h1>"); 
+/*
+123 != 0 =======>true====>rem = 123% 10
+=3
+sum = 0+3
+=3
+num = 123/10
+12
+12 != 0 =======>true=====>rem = 12 % 10
+=2
+sum =3 + 2 = 5
+num = 12/10
+1 !=0 ======>true=====> rem = 1% 10
+=1
+sum = 5+1
+=6
+num = 1/10
+= 0
+0! = 0 ====>false=====> controller shift outside the loop and print the sum]
+*/
+// var num =parseInt(prompt("Enter the Number"))
+// var i = 1;
+// sum = 0;
+// while(i%2==0) {
+   // sum =sum + i;
+   // document.write("Sum of Even numbers"+ sum)
+// }
+// document.write("Bye")
+
+// Print the series of Odd Number 
+// var num = parseInt(prompt("Enter the Number"))
+// var i =1;
+// sum = 0
+// while(i%2!==0) {
+//   sum = sum + i
+//   document.write("Sum of Odd Numbers" + sum)
+// }
+
+
+</script>
+
+   

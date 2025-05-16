@@ -1,0 +1,212 @@
+<script>
+//     message = "Good Night" 
+//     function hello1(){
+//         let message = "Good Morning"
+//         {
+//            let message = "Good Afternoon"
+//             console.log("Hello 1 :"+message);
+//         }
+//         let c = function hello2(){
+//             console.log("I am c "+ message)
+//         }
+//         return c
+//     }
+//    c = hello1();
+//    c()
+//    ==========================================
+//     message = "Good Night" 
+//     function hello1(){
+//         let message = "Good Morning"
+        
+//           // let message = "Good Afternoon"
+//             console.log("Hello 1 :"+message);
+        
+//         let c = function hello2(){
+//             console.log("I am c "+ message)
+//         }
+//         return c
+//     }
+//    c = hello1();
+//    c()
+// ================================================
+// function init(){
+//     var name = 'Mozilla';//Name is the local variable created by init
+//     function displayName(){
+//         //displayName is the inner function, a closure
+//         console.log(name); //use variable declared in the parent function
+//     }
+//     name="Ujjwal";
+//     return displayName;
+// }   
+// let c =init();
+// c()
+// ===================================================
+// function outer(){
+//     var name = "Shivam"
+//     function inner(){
+//         name = "tannu"
+//         console.log("Inner : "+name)
+//     }
+//     inner();
+//     console.log("Outer :"+name);
+// }
+// outer();
+// ==============================================
+// function outer(){
+//     var name = "Omkareshwar";
+//     function inner(){
+//         let u_name = "Mahakaleshwar"
+//         console.log("Inner : "+u_name)
+//     }
+//     inner();
+//     console.log("Outer : "+name);
+// }
+// outer();
+// ===========================================
+// function outer(){
+//     var name = "Shivalaya";
+//     function inner(){
+//         let u_name = "Trirupati";
+//         console.log("Inner :"+u_name+":"+name);
+//     }
+//     console.log("Outer :"+name);
+//     return inner;
+// }
+// var fun = outer()
+// fun()
+// =====================================
+//function outer(){
+  ////  var name = "Indonesia";
+    //function inner(){
+      //  console.log("Inner :"+name)
+    //}
+    //name = "Sri Lanka"
+    //inner();
+    //console.log("Outer :"+name);
+//}
+//outer();
+// ======================================
+// function returnfunc() {
+
+
+// const x = ()=>{
+//   let a =1;
+//   console.log(a);
+//   const y = ()=>{
+//    // let a = 2;
+//     console.log(a);
+//     const z =()=>{
+//      // let a = 3
+//       console.log(a);
+//     };
+//     z();
+//   };
+//   a=999
+//   y();
+// };
+// return x
+// }
+// let a = returnfunc();
+// a();
+// closure is a function with its lexical environment ek function ke sath uska lexical environment bind ho ke milta hai 
+// function init(){
+//   var name = 'Mozilla' 
+//   function displayName() {
+//     console.log("name" +name)
+//   }
+//   return displayName;
+// }
+// let c = init();
+// c();
+// =======================================
+// function returnFunc() {
+// const x=()=>{
+//   let a = 1;
+//   console.log(a);
+//   const y =()=>{
+//     let a = 2;
+//     console.log(a);
+//     const z =()=>{
+//       let a = 3;
+//       console.log(a);
+//     }
+//     z();
+//   }
+//   y();
+// }
+// return x;
+// }
+// let c = returnFunc();
+// c();  
+// =====================================
+// function greet(){
+//   var name = "Ujjwal";
+//   function hello(){
+//     console.log("Hello"+name+"!")
+//   }
+//  return hello;
+// }
+// let sayhello = greet();
+// sayhello();
+// ===================================
+// function multiplyBy(){
+//   var x = 10;
+//   function multiply(){
+//     var y = 5
+//     console.log("x*y"+x*y);
+//   }
+//   multiply();
+// }
+// multiplyBy(); 
+// ===============================
+// Currying in javascript 
+// function add(a,b,c){
+//   return a+b+c
+// }
+// console.log  (add(2,5,6))
+// =========================== 
+// function add(a){
+//    return function(b){
+//     return function(c){
+//       return a+b+c;
+//     };
+//    };
+// };
+// console.log(add(2)(3)(5));
+// =========================================
+// function sendAutoEmail(to){
+//   return function(subject){
+//     return function(body){
+//       console.log(`Sending Email to ${to}with subject ${subject}:{body}`)
+//     }
+//   }
+// }
+// let step1 = sendAutoEmail("ujjukush29@gmail.com") 
+// let step2 = step1('New order Confirmation')
+// step2("hey Ujjwal I am here for you");  
+// const sendAutoEmail = (to) => (subject) => (body) =>{
+// console.log(`Sending Email to ${to} with subjects ${subject}: ${body}`);
+// }
+// let step1 = sendAutoEmail("ujjukush29@gmail.com");
+// let step2 = step1("New order Confirmation");
+// step2("hey Ujjwal I am here with you");   
+
+// function add(x,y,z){
+//   return x+y+z;
+// }
+// var res = add((2)(3)(5));
+// console.log(res);  
+// ==================================
+// function add(x){
+//   return function(y){
+//     return function(z){
+//       return x+y+z;
+//     }
+//   }
+// }
+// console.log(add(2) (5) (7));
+// console.log(add(55)(66)) 
+// console.log(add(44))
+// ====================================
+
+</script>

@@ -1,0 +1,318 @@
+<!-- <script> -->
+<!-- // var arr = [23,63,91,45,25,73,16,89,42,105]
+        // // arr.forEach((ele)=>{
+        // //         console.log(ele);
+        // // })
+        // // arr.map((ele)=>{
+        // //         console.log(ele);
+        // // })
+        // // arr.map((ele,index)=>{
+        // //         console.log(ele,index);
+        // // })
+        // arr.map((ele,index,arr)=>{
+        //         console.log(ele,index,arr);
+        // })
+<!-- // ======================================================   --> -->
+<!-- // var arr = [1,2,3,4,5,6]
+// arr.map((ele)=>{
+//         console.log(ele*2);
+//         console.log(arr);
+
+// })       -->
+<!-- // ==========================================================
+// const peoples = [
+        // {name: "Lalllu", Age:"25"},
+        // {name: "Ramu", Age:"45"},
+        // {name: "Tamu", Age:"89"}
+// ];
+// const people = peoples.map((person)=>{
+        // console.log(person.name);
+         -->
+<!-- // })
+// console.log(peoples);
+//==================================================
+// filter():The Filter method takes each element in array and it applies
+// a conditional statement against it. If this conditional statement returns true,
+// the element gets pushed to the output array.
+// If the condition return false the element does not get pushed to the output array. 
+// The filter method returns a new array that can have a different length.
+// arr = [11,22,25,28,31,42,45,72]
+// for(var i=0;i<arr.length;i++){
+//         if(arr[i]>30){
+//                 console.log(arr[i]);
+//         }
+// }
+// for(var i=0;i<arr.length;i++){
+//         if(arr[i]%2==0){
+//                 console.log(arr[i]);
+//         }
+// }  -->
+<!-- // arr.filter((ele)=>{
+        // if(ele>30){
+                // console.log(ele);
+        // }
+// })
+// arr.filter((ele)=>{
+        // if(ele%2==0){
+                // console.log(ele);
+        // }
+// })   -->
+<!-- // ============================================ -->
+<!-- // Event:Event is used to perform the specifice functionality
+// Event are activity which is used to perform the different different 
+// and or dynamic changes on application level UI.
+// 1)Click BasedEvent -->
+<!-- // 2)Focused Event -->
+<!-- // 3)State Change Event
+// 4)Cursor based event -->
+<!-- // 5)Keybased Event  -->
+<!-- // =================================================== -->
+<!-- <html>
+<head>
+        <title>document></title>
+        <script>
+                function show(){
+                        alert("Show called.....");
+                }
+        </script>        
+        </head>
+<body>
+        <button onclick="show()">Click here!</button>&nbsp;&nbsp;
+        <button ondblclick="show()">Click Here!</button>     
+</body>         -->
+=======================================================
+<!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+        <script>
+                function getdata(){
+                        var a = document.getElementById('x');
+                        var b = document.getElementById('y');
+                        var z = parseInt(a.value) + parseInt(b.value)
+                        console.log("Add is : "+z)
+                }
+         </script>
+        <title>Document</title>
+ </head>
+ <body>
+        <center>
+                <input type="text" placeholder="Enter Value of x" id="x"/>
+                &nbsp;&nbsp;
+               
+                <input type ="text" placeholder="Enter Value of Y" id="y"/>
+                
+                <br><br>
+                <button onclick="getdata()">Send Data!</button>&nbsp;&nbsp;
+        </center>
+ </body>
+ </html> -->
+<!-- ======================================================== -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+       <script>
+        function getdata(){
+                var a = document.getElementById('x');
+                var b = document.getElementById('y');
+                var z = parseInt(a.value) - parseInt(b.value);
+                console.log("Sub is : "+z);
+        }
+       </script>
+        <title>Document</title>
+</head>
+<body>
+        <center>
+                <input type="text" placeholder="Enter the value of x" id="x"/>
+                &nbsp;&nbsp;
+                <input type="text" placeholder="Enter the value of y" id="y"/>
+                <br><br>
+                <button onclick="getdata()">Send Button !</button>&nbsp;&nbsp;
+        </center>
+</body>
+</html> -->
+<!-- ================================================================ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+        <script>
+                function getdata(){
+                       
+                      
+
+                }
+        </script>
+        <title>Document</title>
+</head>
+<body>
+        <input type="text" placeholder="Enter the value Even" id="even"/>
+        &nbsp;&nbsp;
+        <input type="text" placeholder="Enter the Value of Odd" id="Odd"/>
+        <br><br>
+        <button onclick="getdata()">Send Data!</button>&nbsp;&nbsp;
+</body>
+</html> -->
+<!-- =================================================== -->
+<!-- res.innerHTML = `Factorail is : ${f}`;
+ res.style.background = 'red';
+ res.style.color = 'white'; -->
+<!-- ====================================================  -->
+<!-- <!DOCTYPE html>
+  <html lang="en">
+  <head>
+       <script>
+        function fact(){
+                var data = document.getElementById('data');
+                var res  = document.getElementById('res');
+
+                console.log(data+": :"+res);
+                console.log(data.value+": :"+res.innerHTML);
+        }
+       </script>
+        <title>Document</title>
+  </head>
+  <body>
+        <center>
+                <input type="text" placeholder="Enter data" id="data"/>
+                <h1 id="res">Hello studnets Welcome to code better.</h1>
+                <button onclick="fact()"factorail</button&nbsp;&nbsp;>
+        </center>
+  </body>
+  </html> -->
+<!-- ========================================================================== -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <script>
+                function getData() {
+                        var data = document.getElementByTagname('h1');
+                        console.log(data);
+                        console.log(data.length)
+
+                        for (let i = 0; i < data.length; i++) {
+                                console.log(data[i].innerHTML)
+                        }
+                }
+        </script>
+        <title>Document</title>
+</head>
+
+<body>
+        <center>
+                <h1>Hello Ujjwal</h1>
+                <h1>Hello Govind</h1>
+                <h1>Hello Shubham</h1>
+                <h1>Hello Zeeshan</h1>
+                <h1>Hello Ashu</h1>
+
+                <button onclick="getData">Get data</button>&nbsp;&nbsp;
+        </center>
+</body>
+
+</html>
+<!-- ===================================================================== -->
+<!-- <html>
+
+<head>
+        <title>
+                <script>
+                        function operation() {
+                                var x = parseInt(document.getElementById('x').value)
+                                var y = parseInt(document.getElementById('y').value)
+                                var res = document.getElementById('res');
+                                var z;
+                        
+                        var op1 = document.getElementById('add');        
+                        var op1 = document.getElementById('Sub');        
+                        var op1 = document.getElementById('Mul');        
+                        var op1 = document.getElementById('div');        
+                        var op1 = document.getElementById('mod');        
+                        }     
+       console.log(op1.checked+":"+op2.checked+":"+op3.checked+":"+op4.checked+":"+op5.checked);
+       console.log(op1.value+":"+op2.value+":"+op3.value+":"+op4.value+":"+op5.value);
+       if(op1.checked==true && op1.value=='add'){
+           z = x+y;
+       }                 
+      else if(op2.checked==true && op2.value=='sun'){
+           z = x-y;
+       }                 
+       else if(op3.checked==true && op3.value=='Mul'){
+           z = x*y;
+       }                 
+       else if(op4.checked==true && op4.value=='div'){
+           z = x/y;
+       }                 
+       else if(op5.checked==true && op5.value=='mod'){
+           z = x%y;
+       }  
+       res.innerHTML = z; -->
+       <!-- res.style.color = 'red'               
+                </script>
+        </title>
+</head>
+<body>
+        <center>
+        <input type="text" placeholder="Enter Value of x" id="x"/>&nbsp;&nbsp; 
+        <input type="text" placeholder="Enter Value of y" id="y"/>&nbsp;&nbsp; 
+        <br><br>
+        <input type="radio" name="maths" id="add" value='add'/>Add &nbsp;&nbsp;
+        <input type="radio" name="maths" id="sub" value='add'/>sub &nbsp;&nbsp;
+        <input type="radio" name="maths" id="mul" value='add'/>mul &nbsp;&nbsp;
+        <input type="radio" name="maths" id="div" value='add'/>div &nbsp;&nbsp;
+        <input type="radio" name="maths" id="add" value='add'/>Mod &nbsp;&nbsp;
+        <br/><br/>
+        <button onclick="operation()">Operation</button>&nbsp;&nbsp;
+        </center>
+</body>
+</html>  -->
+<!-- ========================================================================= -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+        <script>
+                function factorial(){
+                        var num=parseInt(document.getElementById('num').value);
+                        var f=1;
+                        for(let i=1;i<=num;i++){
+                                f=f*i;
+                        }
+                      console.log(`Factorial is :${f}`);
+                document.write(`<h1>Factorial is :${f}</h1>`);
+        } 
+        </script>
+        <title>Events</title>
+ </head>
+       
+ <body>
+        <center>
+                <input type="text" placeholder="Enter the Any value of Num to print factorial" id="num"/>
+<br><br>
+<button onclick="factorial()">Factorial</button>&nbsp;&nbsp;
+        </center>
+ </body>
+ </html> -->
+ <!-- ========================================================== -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+       <script>
+        var num = parseInt(document.getElementById('num').value);
+        var res = document.getElementById('res');
+        var f=1;
+        for(let i=1;i<=num;i++){
+                f = f*i;
+        }
+        console.log(`factorai is :${f}`);
+        res.innerHTML = `factorial is :${f}`;
+      //  Get data from tag & set data from tag we use; => inner.HTMl
+        res.style.background = 'red';
+        res.style.color = 'green';
+       </script>
+        <title>Document</title>
+  </head>
+  <body>
+        <input type="text"placeholder="Enter the any Value to print" id="num"/>
+        <br><br>
+        <button onclick=factorial()>Factorial</button>button>&nbsp;&nbsp;
+  </body>
+  </html>

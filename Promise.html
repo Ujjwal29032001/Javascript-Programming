@@ -1,0 +1,48 @@
+<script>
+    var fun = ()=>{      //Promise ek function hai object return karta hai
+        return new Promise((resolve,reject)=>{
+            //resolve(); //Call them back
+            reject(); //Call them Back
+        });
+    }
+    var obj = fun();
+    obj.then(()=>{
+        console.log("thenn block execute....")
+    }).catch(()=>{
+        console.log("Catch Block execute....")
+    })
+    /*
+    fun : It is object & It can be hold the Promise value
+    */
+//    ====================================================
+var fun = (num)=>{
+    return new promise((resolve,reject)=>{
+       // resolve ("Welcome Studenths..."); //Call them Back
+       reject("Bye studenths..."); //call catch block
+    });
+}
+var obj = fun();
+obj.then((data)=>{
+    console.log("Then Block execute...."+data);
+}).catch((err)=>{
+    console.log("Catch Block exceute...")
+})
+// ================================================
+//Check give Number is even or odd using promise
+var fun = (num)=>{
+    return new promise((resolve,reject)=>{
+        if(num 2==0){
+            resolve("Even")
+        }
+        else{
+            reject("Odd")
+        }
+    });
+}
+var obj = fun(21);
+obj.then((data)=>{
+    console.log("Given number is"+data);
+}).catch((err)=>{
+    console.log("Given number is :"+err);
+})
+</script>

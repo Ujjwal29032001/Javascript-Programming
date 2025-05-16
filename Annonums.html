@@ -1,0 +1,142 @@
+<script>
+    var add = function() //Annnonmus function
+    {
+        var x = 10;
+        var y = 20;
+        console.log("x is :"+x);
+        console.log("y is : "+y);
+        console.log("Add is :"+(x+y));
+    }
+    var addition = function(x,y){
+        console.log("x is : "+x)
+        console.log("y is : "+y)
+        console.log("Addition is : "+(x+y));
+    }
+    var sum = function(x,y){
+        var z = x+y;
+        return z;
+    }
+    var sum_1 = function(){
+        var x = 200;
+        var y = 200;
+        var z = x+y;
+        return z;
+    }
+    add();
+    console.log("====")
+    var a = 100;
+    var b = 200;
+    addition(a,b); //call by value or call by actual parameter
+    console.log("====")
+
+    a = 1000;
+    b = 2000;
+    var res = sum(a,b)  //call by actual value or call by actual parameter
+    console.log("Sum is :"+res);
+    console.log("======")
+    res = sum_1();
+    console.log("Sum_1 is : "+res); //call by value or call by actual parameter
+
+    // Find the factorial of any given number using annonmus function
+    var fact = function(){  //annonmus function
+        var num = 7;
+        var f = 1;
+        for(var i=1;i<=num; i++){
+            f = f * i
+        }
+        console.log("Fact is : "+f)
+    }  
+    var fact_1 = function(num){
+        var f = 1;
+        for(var i = 1;i<=num;i++){
+            f = f*i
+        }
+        console.log("Fact_1 is :"+f);
+    }
+    var fact_2 = function(num){ 
+        var f = 1;
+        for(var i=1;i<=num;i++){
+            f = f*i;
+        }
+        return f;
+    }
+    var fact_3 = function() //Annonmus function
+    {
+        var num = 8;
+        var f = 1;
+        for(var i=1;i<=num;i++){
+            f = f * i
+        }
+        return f
+    } 
+    fact();
+    console.log("=====")
+    var n = 6;
+    fact_1(n); //call by value or call by actual parameter
+
+    console.log("=====")
+    n = 5;
+    var res = fact_2(n); // call bybvalue or call by actual parameter
+    console.log("Fact_2 : "+res);
+
+    console.log("======")
+    res = fact_3(); // call by value or call by actual parameter
+    console.log("fact_3 is :"+res);
+
+    // Check given no is Prime or not Using Assignment Function
+    function check_num(num){
+        count = 0;
+        for(var i=1; i<=num; i++){
+            if(i%2==0){
+                count++
+            }
+        }
+        
+    }
+// ============================================================    
+//Arrow Function 
+// Annonmus Function
+// var add = function(x,y){
+//     console.log("Add is :"  +(x+y));
+// }
+var add=(x,y)=>console.log("Addition is :"+(x+y));
+add(11,22);  
+
+// Arrow Function with return statement
+// var add = function(x,y){
+//     var z = x+y;
+//     return z;
+//     or 
+//     return x+y;
+// }
+// add(x+y);
+// =====================================
+// var add = (x,y)=>x+y;
+// var result = add(44,44);
+// console.log("Add is :"+result);
+
+// Addition of arrow function
+// var show = function(){
+//     console.log("Show Called..");
+// }
+// var show=()=>{
+//     console.log("Arrow Function Invoked");
+// }
+// This is arrow code
+// var wish=()=>console.log("Wish Function Invoked :");
+// console.log(typeof show);
+// console.log(typeof wish)
+
+var fact = (num)=>{
+    var f = 1;
+    for(var i=1;i<=num; i++){
+         f = f * i;
+    }
+    return f;
+
+}
+var n = parseInt(prompt("Enter Any Number"));
+var res = fact(n);
+console.log("Factorail is :"+res);
+
+</script>

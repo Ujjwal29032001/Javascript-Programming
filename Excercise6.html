@@ -1,0 +1,372 @@
+<script>
+    //Sync Function
+   // console.log("Before Function Invoked...")
+    //function show(){
+      //  console.log("Show Function Invoked..")
+    //}
+    //show(); //sync calling
+    //console.log("After Function Invoked...")
+
+// Factorial of two number using callback async function
+// & return value
+// console.log("Before Function invoked...");
+// var fact = (num,obj)=>{
+//     var f = 1;
+//     for(i=1;i<=num;i++)
+// {
+//     f = f * i;
+// }
+// setTimeout(()=>{
+//     obj(f);
+// },3000)
+// } 
+// var n = parseInt(prompt("Enter Any Value"));
+// fact(n,(res)=>{
+//     console.log("Factorial is : "+res);
+//})     
+//console.log("After Function Invoked");
+// ==================================================
+// Find the Even or Odd using callback async function & return value
+//console.log("Before Function Invoked...");
+//var check_num = (num,obj)=>{
+    //var flag;
+    // if(num%2++''''';;l/' =0){
+      //  flagctrue;
+    //}
+   // else{
+     //   flag   
+    //    f============================22
+  //  }
+//}
+// check given number is prime or not.
+//console.log("Before Function Invoked..");
+//var check_num 
+// ========================================
+// var fun =()=>{
+//     return new Promise((resolve,reject)=>{
+//        // resolve();
+//         reject();
+//     });
+// } 
+//     var obj = fun();
+//     obj.then(()=>{
+//         console.log("then block execute")
+//     }).catch(()=>{
+//         console.log("catch block execute")
+//     })
+// =============================================
+// var fun =(num)=>{
+    // return new Promise((resolve,reject)=>{
+        // resolve("Welcome new students");
+      //  reject("Bye students");
+    // })
+// }
+// var obj = fun();
+// obj.then((data)=>{
+    // console.log("then Block Executed")
+// }).catch((err)=>{
+    // console.log("catch block executed")
+// })     
+// ===================================
+//function greet(){
+   // console.log("Hello World")
+//}
+//greet();
+//ab apna ko arrow function banana hai
+// const greet = (count)=>{
+   // for(i=0; i<count; i++)
+    //console.log("Hello world")
+//}
+//greet(10);
+
+//const variable = ()=>{
+
+//}
+//variable();
+
+// const square =(num)=> num*num;
+//console.log(square(2)); 
+// 
+const calculate = (a, b, operation)=>{
+    return operation(a,b)
+}
+const addition = calculate(3,4, function (num1,num2) {
+     return num1 + num2;        
+})
+console.log(addition);
+    
+
+// const subtraction=(a,b)=> a-b
+// const subResult = calculate(8,3,subtraction)
+// console.log(subResult);
+
+//const Multiplication=(a,b)=> a*b
+//const multiResult = calculate(9,3,Multiplication)
+//console.log(multiResult)
+
+// function multiply(a,b) {
+//     return a*b
+// }
+// const multiResult = calculate(9,7,multiply)
+// console.log(multiResult)   
+
+// var add = (x,y,obj)=>{
+//     return z = x + y;
+//     obj(z);
+// }
+// add(11,22,(res)=>{
+//     console.log("Addition is :"+res)
+// })
+// var fact = (num,obj)=>{
+//   var f=1;
+//   for (var i=1;i<num; i++){
+//      f = f * i
+//   }
+//   obj(f);
+// }
+// var num = parseInt(prompt("Enter Any Number"))
+// fact(num,(res)=>{
+//   console.log("Factorial is "+res)
+
+  
+// })
+// var prime = (num,obj) =>{
+//   var count=0;
+//   for(var i=1; i<num; i++){
+//     if(num%i==0){
+//       count++;
+//     }
+//     if(count == 2){
+//       return true;
+//     }
+//     else{
+//       return false;
+//     }
+    
+//   }
+//   obj(count)
+//   }
+//   var num = parseInt(prompt("Enter Any number"))
+//   prime(num,(res)=>{
+//     console.log("Given Number is Prime")
+//   }
+// =========================================== 
+// function SI(p,r,t){
+//   var SI = p*r*t/100
+//   document.write("Simple Interest is :"+SI)
+// } 
+// SI(10000,5,6)
+// ===============================================
+// var arr = [1,2,3,4,5,6,7];
+// var sum =0;
+// // Sum of Array element using for loop
+// for(var i=0; i<arr.length; i++){
+//   document.write(arr[i]+"&nbsp&nbsp;")
+//   sum = sum + arr[i];
+//   at = sum /arr.length;
+
+// }
+// document.write("The average temperature for the week is :"+at);
+// ====================================================================
+//var sales = [150,200,120,300,250,180,220]
+//var sum = 0;
+//for(var i=0;i<arr.length;i++){
+  //document.write(arr[i]+"&nbsp;&nbsp;")
+  //sum = sum + arr[i];
+  //at = sum /arr.length;
+//}
+//document.write("The Average daily sales"+at)
+//=======================================================
+var num = parseInt(prompt("Enter Any Number"));
+var prime = (num,obj)=>{
+  var count = 0;
+  for(var i=1; i<=num; i++){
+    if(num%i==0){
+      count++;
+    }
+  }
+  obj(count);
+}  
+prime(num,(res)=>{
+  if(res==2){
+    console.log("prime")
+  }
+  else{
+    console.log("not prime")
+  }
+});
+//================================================
+//Synchronus Function
+//console.log("Before function Invoked")
+// function show(){
+//console.log("Show function Invoked");
+
+// }
+// show();
+// console.log("After Function Invoked")
+//===============================================
+//This setTimeout
+// console.log("Before Function Invoked");
+// function show(){
+//   console.log("Show Function invoked");
+// }
+// setTimeout(show,3000)
+// console.log("After Functiojn Invoked")
+// ==================================================
+// console.log("Before Function Invoked");
+// function add(x,y){
+//   console.log("Addition is"+(x+y))
+// }
+// setTimeout(()=>{
+//   add(11,23)
+// },8000)
+// console.log("After Function Invoked")
+//======================================================
+// console.log("Before Function Invoked");
+// function sub(x,y){
+//    console.log("Subtarction is"+(x-y))
+// } 
+// setTimeout(()=>{
+//   sub(23,11)
+// },8000)
+// console.log("After Function Invoked")
+//====================================================
+//This Is SetInterval
+// console.log("Before Function Invoked");
+// function multi(x,y){
+//   console.log("Multipliaction of two number is"+x*y)
+// }
+// setInterval(()=>{
+//   multi(5,9)
+// },3000)
+// console.log("After Function Invoked")
+//========================================================
+//Callback using Async
+// console.log("Before Function Invoked");
+// var fun = (obj)=>{
+//   console.log("Hello Dada")
+// }
+// setTimeout(()=>{
+//   console.log("Callback function Invoked")
+// },3000)
+// fun(()=>{
+//   console.log("Callback function Invoked")
+// })
+// console.log("After Function Invoked")   
+// =====================================================
+//function addNumberAsync(a,b,callback){
+  //     setTimeout(()=>{
+    //    const sum = a+b; //Perform addition
+      //  callback(sum);  //Pass the result to the callback
+       //},2000)          //Simulate async operation with 2 second delay 
+//}
+//addNumberAsync(5,10,(result)=>{
+  //console.log("The sum of result is"+result)
+//})
+// 
+// ======================================================
+// function factorial(num,callback){
+//   var f = 1;
+//   for(var i=1; i<=num; i++){
+//     f = f * i
+//   }
+//   setTimeout(()=>{
+//     callback(f);
+//   })
+// }
+// var num = parseInt(prompt("Enter Any Number"));
+// factorial(num,(result)=>{
+//   console.log("Factorial is",result)
+// })
+
+//================================================
+// function add(x,y,callback){
+//   var sum = x + y 
+//   setTimeout(()=>{
+//      callback(sum)
+//   },3000)
+// }
+// add(10,20,(result)=>{
+//   console.log("Addition of two number is :"+result)
+// })
+// // ===================================================  
+// function even(num,callback){
+//   if(num%2==0){
+//     console.log("<h1>Given Number is Even")
+//   }
+//   else{
+//     console.log("<h1>Given Number is Odd</h1>")
+//   }
+//   setTimeout(()=>{
+//     callback(num)
+//   },3000)
+// }
+// var num = parseInt(prompt("Enter Any number"))
+// even(num,(result)=>{
+  
+// })
+// ========================================
+//prototype functions :As javascript is object based oriented in nature,
+//Js standards:-
+//Es5 : 2009 :object based OO :JS, NodeJS,ExpreesJS
+//ES6=> 2015: Class based OO: ReactJS, TS, Angular/cli
+//==============================================
+// function show(){
+//   var x = 10;   
+//   console.log("Inside the Show of Value is :"+x);
+// }
+// show();
+// console.log("Outside the Show Value of x is :"+x);
+// //===================================================
+// function show(){
+//   this.x = 10;
+//   console.log("Inside the Show Value of x is :"+x);
+// }
+// show();
+// var obj = new show();
+// console.log("Outside the Show value of x is:"+x);
+/*
+new : new Keyword is responsible form create a memeory;
+It is also responsibleto create a object.
+object : It is responsible for memeory allocation of all data which are present in a prototype
+function.
+here obj is a object & objname is user define variable.
+*/
+// function showData()
+// {
+//   this.id = 101
+//   this.name = 'Ujjwal'
+  
+//   this.sal = 12334.5
+//   this.mobile = '123456789'
+// }
+// var obj = new showData();
+// console.log(obj);
+// console.log(typeof obj);
+
+// console.log("Id is : "+obj.id);
+// console.log("Name is : "+obj.name);
+// console.log("Sal is : "+obj.sal);
+// console.log("Mobile is : "+obj.mobile);
+//==============================================
+// function Employee(){
+//   this.setEmployee = ()=>{  //current object ke prototype ko reprsent karta hai
+//     this.id=101;
+//     this.name = 'Shivam';
+//     this.sal = 12334.5;
+//     this.mobile= '123456789'
+//   }
+//   this.showEmployee = ()=>{
+//     console.log("ID is :"+this.id)
+//     console.log("name is :"+this.name)
+//     console.log("Sal is :"+this.sal)
+//     console.log("Mobile is :"+this.mobile)
+//   }
+// }
+// var emp = new Employees(); //emp object
+// console.log(emp);
+// console.log(typeof emp)
+// emp.setEmployee();
+//emp.showEmployee();
+
+</script>

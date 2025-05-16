@@ -1,0 +1,278 @@
+<script>
+    // Assignment Function or variable function
+    // var x = 10;
+    // console.log("Value of x is :"+x); //10
+    // console.log("Type of x is :"+typeof x); //number
+    // console.log("======")
+    // function show(){
+    //     console.log("show called")
+    // }
+    // console.log("Value of Show is :"+show); //print show function
+    // console.log("Type of show is: "+typeof show); //function 
+    // console.log("======")
+
+    // x='Mahi'
+    // console.log("Value of x is :"+x); //Mahi
+    // console.log("Type of x is :"+typeof x); //string
+    // console.log("======")
+
+    // x = show;
+    // console.log("Type of  x is :"+typeof x); //function
+    // console.log("Type of show is :"+typeof show); //function
+    // x(); //Function Calling;
+    // show(); //Function calling
+// =================================================================
+// function show(){
+//     console.log("Show called")
+// }
+// show();
+//   var x = show  /*here x is Assignment or variable function*/
+// x();
+// show();
+// show = 100; //show convert to a number type
+// console.log("Type of Show is :"+typeof show) 
+// x();
+// console.log(show);
+// show();
+// =============================================================
+// Annonmus Function => Function without name
+// function show(){
+//     console.log("Show called")
+//    // console.log("Annonmus Function Called")
+// }
+// var x = function(){
+//     console.log("Annonmus Function Called")
+// }
+// x();
+// console.log("Type of x is :"+typeof x);
+// var add = function(){
+//     var x = 10;
+//     var y = 20;
+//     console.log("x is :"+x);
+//     console.log("y is :"+y);
+//     console.log("Addition is :"+(x+y));
+// }
+// var addition = function(x,y){
+//     console.log("x is :"+x);
+//     console.log("y is :"+y);
+//     console.log("Addition is:"+(x+y));
+// }
+// var sum = function(x,y){
+//     z = x+y;
+//     return z;
+// }
+// var sum_1 = function(){
+//     var x = 10;
+//     var y = 20;
+//     var z = x+y;
+//     return z;
+// }
+// res = sum_1();
+// console.log("Sum_1 is :"+res);
+// a=100;
+// b=200;
+// var res = sum(100,200);
+// Console.log("Sum is :"+res);
+// var a = 100;
+// var b = 200;
+
+// addition(a,b)
+// add();
+// ==============================================================
+// Find the Factorial of any given number using anonmus function
+// var fact = function(){
+//     var num = 7;
+//     var fact = 1;
+//     for(var i=1;i<=num;i++){
+//         f=f*i;
+//     }
+//     console.log("Factorial is :"+f);
+// }
+// fact();
+// console.log("==========")
+// var fact_1 = function(num){  //num=n
+//     var f = 1;
+//     for(var i=1;i<=num;i++){
+//         f = f * i;
+//     }
+//     console.log("Factorial is :"+f);
+// }
+
+
+//  n =5;
+// fact_1(n);
+// ====================================
+// var fact_2 = function(num){
+    // var f = 1;
+    // for(var i=1; i<=num; i++){
+        // f = f* i;
+    // }
+    // return f;
+// }
+// var res = fact_2(5)
+// console.log("fact_2 :"+res);
+// ==================================================
+// var fact_3 = function(num){
+//     var f = 1;
+//     for(var i=1;i<=num; i++){
+//         f = f * i
+//     }
+//     return f;
+// }
+// res = fact_3(4);
+// console.log("fact_3 :"+res);
+
+// Check Given Number is Prime or not using Assignment Function
+// var prime = function(num){
+//         var num = parseInt(prompt("Enter Any Number"))
+//         var count = 0;
+//         for(var i=1; i<=num; i++){
+//             if(num%i==0){
+//                 count++
+//             }
+//         }
+//         if(count == 2){
+//           // 
+//   document.write("<h1>Given Number is Prime</h1>");
+//         }
+//         else{
+//             document.write("<h1>Given Number is not prime</h1>");
+//         }
+// }
+// prime();
+// ==================================================================
+// var prime = function(num){
+//     var count = 0;
+//     for(var i=1; i<=num; i++){
+//         if(num%i==0){
+//             count++
+//         }
+//     }
+//     if(count==2){
+//         document.write("<h1>Given Number is prime")
+//     }
+//     else{
+//         document.write("<h1>Given Number is not Prime</h1>")
+//     }
+// }
+// var num = parseInt(prompt("Enter Any Number"))
+// prime(num);
+// ==============================================================
+// var prime = function(num){
+//     var count = 0;
+//     for(var i=1; i<=num; i++){
+//         if(num%i==0){
+//             count++
+//         }
+        
+//     }
+//     if(count==2){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+    
+    
+// }
+// var num = parseInt(prompt("Enter Any Number"))
+// let res =prime(num);
+// // document.write("Given number is :"+res);
+// if(res){
+//     document.write("<h1>Given Number is Prime</h1>")
+// }
+// else{
+//     document.write("<h1>Given Number is not Prime</h1>")
+// }
+// ==============================================================
+// var prime = function(num){
+//      var num = parseInt(prompt("Enter Any Number"))
+
+//     var count = 0;
+//     for(var i=1; i<=num; i++){
+//         if(num%i==0){
+//             count++
+//         }
+//     }
+//     if(count==2){
+//         return true
+//     }
+//     else{
+//         return false;
+//     }
+    
+// }
+// res = prime();
+// if(res){
+//     document.write("<h1>Given Number is Prime</h1>")
+// }
+// else{
+//     document.write("<h1>Given Number is not Prime</h1>")
+// }
+
+// =============================================================
+// Arrow Function
+// var add =()=>{
+    // var x = 10;
+    //  var y = 20;
+    //  console.log("Addition of :"+(x+y));
+
+// }
+// add(10,20);
+// ============================================
+// var add =(x,y)=>{
+    // console.log("Addition is :"+(x+y));
+// }
+// add(30,40);
+// ===============================================
+// var add = (x,y)=>console.log("Addition is :"+(x+y));
+// add(50,60);
+// ==================================================
+// var add =(x,y)=>{
+//     var z = x+y;
+//     return z;
+// }
+// var res = add(70,80);
+// console.log("Addition is :"+res);   
+// =====================================================
+// var add = (x,y)=>x+y;
+// var result = add(90,100);
+// console.log("Addition is :"+result);
+// =========================================================
+// var show = function(){
+    // console.log("Show Called..")
+// }
+// show();
+// ============================================================
+// var show=()=>{
+//     console.log("Arrow function Invoked");
+// }
+// show();
+// ===================================================================
+// var wish=()=>console.log("Wish Function invoked");
+// var show=()=>{
+//      console.log("Arrow function Invoked");
+//  }
+// // console.log(typeof show);
+// // console.log(typeof wish); 
+// show();
+// wish();
+// ==================================================================
+// var fun =(obj)=>{
+    // console.log("function invoked")
+    // if(typeof obj == "function"){
+        // obj();
+    // }
+    // else{
+        // console.log("Obj :"+obj)
+    // }
+// }
+// var fun1=()=>{
+    // console.log("fun-1 Invoked");
+// }
+// fun(fun1)
+// fun(100);   
+// =============================================
+var fun =
+
+</script>

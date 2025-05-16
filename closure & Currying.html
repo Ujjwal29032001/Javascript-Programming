@@ -1,0 +1,62 @@
+<!-- closure means nesting function -->
+ <!-- closure = Required data + function 
+ and it is a top level entity and need two parameter
+ number one-required Data 
+ numbee two - Functions
+ required data is also known as lexical scope
+ or surrounding state.
+ when we binded the function with required data so this is createda top level entity
+ and thats why We called it closure and here closure function created automatically closure function is like Nested syntax -->
+ <!-- ===================================================================== -->
+ <script>
+//     function outer(){
+//         var name = "mahi"; //local variable
+//         function inner(){
+//             console.log("Inner :"+name)
+//         }
+//         inner();
+//         console.log("Outer :"+name);
+//     }
+//     outer();
+// // ===============================================    
+// function outer(){
+//     var name = "mahi";  //local variable
+//         //local variable
+//         function inner(){
+//             let u_name = "Chiku"; //scopic variable
+//             console.log("Inner :"+name)
+//         }
+//         inner(); //call inner function
+//         console.log("Outer :"+name);
+//     }
+//     outer();
+// // =====================================================
+// function outer(){
+//     var name = "Mahi"; //local variable
+//     function inner(){
+//         let u_name = 'Chiku'; //scopic variable
+//         console.log("Inner :"+name+":"+u_name);
+//     }
+//     console.log("Outer :"+name);
+//     return inner;
+// }    
+// var fun = outer();
+// fun() -->
+
+// ============================
+//function outer(){
+   // var name = 'Mahi'; //local variable
+   // function inner(){
+    //   console.log("Inner "+name)
+    //}
+    //inner(); 
+    //console.log("Outer :"+name);
+//}  
+//outer();
+//==============================
+//Currying in html  
+function hello1(){
+     message = "Ujjwal";
+    console.log("Hello 1 :"+message);
+}
+</script> 
